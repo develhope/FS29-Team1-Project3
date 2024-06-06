@@ -1,0 +1,12 @@
+#Ignorare file eslint
+eslint.config.mjs
+
+#Ignorare file json
+package-lock.json
+package.json
+
+#Ignorare cartella node
+/node_modules
+
+#Ignorare sito
+/consegna immagini e sito con effetti/sito/
