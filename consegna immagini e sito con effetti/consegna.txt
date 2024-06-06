@@ -1,0 +1,39 @@
+Scegliere un sito
+https://www.mediaworld.it/
+https://www.ikea.com/
+https://www.ea.com/it-it
+https://www.lego.com/
+
+clonare il sito scelto: https://www.ea.com/it-it   CONFERMATO
+usare lo screen del sito per seguire sempre lo stile del sito in caso il sito cambi qualcosa
+si può aggiungere al 
+homepage
+deve essere adattabile ai vari dispositivi
+
+usare issue di github per assegnare i compiti e i vari punti
+    assignerss: a persone
+    label: per tipo di lavorazione, enhacment oppure bug o issues
+
+tempo per completamento: 15-07-24
+
+Ordine di pagine:
+-homepage
+-altre pagine da Implementare
+
+############################
+DIVISIONE RUOLI
+
+Supervisori:
+JS=Giusp
+HTML/CSS=Fra
+
+-HEADER
+TAG icona alta(favicon):<link rel="shortcut icon" type="image/png" href="https://www.ea.com/assets/images/favicon.png">
+Ema: 'Accetta in modo spintaneo'
+
+-MAIN
+Giusp    OBBLIGATORIAMENTE
+Fra      OBBLIGATORIAMENTE
+
+-FOOTER
+LUCA: 'Luca accetta volontariamente'
