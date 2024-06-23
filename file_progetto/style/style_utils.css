@@ -1,9 +1,37 @@
 /* Blocchi univoci */
 .hero__section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin: 0;
+  height: 450px;
   width: 100%;
+  background: url(../assest/images/img_hero.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.hero__section__content {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  left: 0;
+  padding: 32px;
+  text-align: center;
+  top: 0;
+  width: 100%;
+  font-size: 18px;
+  color: #f3f3f3;
+}
+.hero__section__content__items {
+  padding: 0 63% 5% 0;
+  width: 500px;
+}
+.hero__section__content__items button {
+  background: none;
+  color: #fff;
+  font-size: 18px;
+  padding: 18px 30px;
+  border-radius: 3px;
+  border: 2px solid #f3f3f3;
   height: 400px;
   background: url("../assest/images/main/img_hero.jpg") no-repeat center center;
   background-size: cover;
@@ -54,4 +82,7 @@
   background: url("../assest/images/main/giochi_evidenza/apex-legends.jpg")
     no-repeat center center;
   background-size: 100% 100%;
+}
+.hero__section__content__items button a {
+  color: #fff;
 }
