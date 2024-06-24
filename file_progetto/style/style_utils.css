@@ -21,16 +21,25 @@
   width: 38%;
   margin-left: 1.8rem;
 }
-.hero__icons img {
+.hero__content-1 {
   z-index: 99;
-  width: 100%;
   height: auto;
+  width: 50%;
+  margin-left: 10rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .hero__texts {
   width: 100%;
   height: auto;
   text-align: center;
+  color: #eaeaea;
+}
+.hero__texts-1 {
+  width: 100%;
+  height: auto;
+  text-align: left;
   color: #eaeaea;
 }
 .hero__button {
@@ -40,6 +49,52 @@
   border-radius: 2px;
   border: 1px solid #eaeaea;
   color: #eaeaea;
+}
+
+.bar__hero {
+  background-color: #6fb0d6;
+}
+
+.bar__content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+.bar__content h2 {
+  width: 40%;
+}
+.bar__button {
+  padding: 15px 35px;
+  background-color: rgba(240, 248, 255, 0);
+  border-radius: 2px;
+  border: 2px solid #000000;
+  color: #000000;
+}
+
+.bar__hero {
+  background-color: #6fb0d6;
+}
+
+.bar__content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+.bar__content h2 {
+  width: 40%;
+}
+.bar__button {
+  padding: 15px 35px;
+  background-color: rgba(240, 248, 255, 0);
+  border-radius: 2px;
+  border: 2px solid #000000;
+  color: #000000;
 }
 
 /* Syle Giochi in Evidenza */
@@ -101,16 +156,20 @@
 }
 /* Contenuti dell'hover */
 .bg_gradient {
-  background: linear-gradient(
+  /* background: linear-gradient(
     to right,
     rgba(0, 0, 143, 0),
     rgba(255, 42, 42, 0)
-  );
+  ); */
   display: none;
   position: absolute;
-  z-index: 0;
+  z-index: 1;
   width: 100%;
   height: 100%;
+  transition: background-color 1s ease-out;
+  -webkit-transition: background-color 1s ease-out;
+  -o-transition: background-color 1s ease-out;
+  -moz-transition: background-color 1s ease-out;
 }
 .div_one_game a h5 {
   display: none;
@@ -135,13 +194,12 @@
   transform: translate(0px, -80%);
 }
 .div_one_game a:hover .bg_gradient {
-  display: block;
-  background: linear-gradient(
+  /* background-color: linear-gradient(
     to right,
     rgba(0, 0, 143, 0.8),
     rgba(255, 42, 42, 0.8)
-  );
-  transition: all 5s;
+  ); */
+  background-color: red;
 }
 .div_one_game a:hover h5 {
   transition: 0.5s;
@@ -185,16 +243,17 @@
 }
 .tabs__articles {
   padding-top: 4rem;
+  padding-left: 5rem;
   width: 1200px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min-content, 360px));
-  column-gap: 2rem;
-  row-gap: 2rem;
-  justify-items: center;
+  column-gap: 0.2rem;
+  row-gap: 1rem;
+  justify-items: right;
 }
 .tabs__cards {
-  max-width: 380px;
+  width: 340px;
   text-align: left;
   background-color: #f1f1f1;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.244);
@@ -207,7 +266,7 @@
 }
 
 .tabs__cards:hover {
-  transform: translateY(-0.5rem);
+  transform: translateY(-0.7rem);
   transition: all 1s cubic-bezier(0.215, 0.61, 0.355, 1);
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.759);
 }
