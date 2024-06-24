@@ -122,16 +122,4 @@ a {
   padding-bottom: 2.5rem;
 }
 
-/* Linee guida */
-section {
-  border: 1px solid red;
-  margin: 10px;
-}
-ul {
-  border: 1px solid green;
-  margin: 10px;
-}
-li {
-  border: 1px solid blue;
-  margin: 10px;
-}
+
