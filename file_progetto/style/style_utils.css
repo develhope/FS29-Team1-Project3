@@ -8,6 +8,7 @@
   align-items: center;
   position: relative;
 }
+
 .hero__img{
   position: absolute;
   width: 100%;
@@ -18,12 +19,14 @@
   height: auto;
   width: 38%;
   margin-left: 1.8rem;
-  
 }
-.hero__icons img{
+.hero__content-1{
   z-index: 99;
-  width: 100%;
   height: auto;
+  width: 50%;
+  margin-left: 10rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .hero__texts{
@@ -33,6 +36,12 @@
   color: #eaeaea;
 
 }
+.hero__texts-1{
+  width: 100%;
+  height: auto;
+  text-align:left;
+  color: #eaeaea;
+}
 .hero__button{
   text-decoration: none;
   padding: 15px 35px;
@@ -41,6 +50,30 @@
   border: 1px solid #eaeaea;
   color: #eaeaea;
 }
+
+.bar__hero{
+  background-color: #6FB0D6;
+}
+
+.bar__content{
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+.bar__content h2{
+  width: 40%;
+}
+.bar__button{
+  padding: 15px 35px;
+  background-color: rgba(240, 248, 255, 0);
+  border-radius: 2px;
+  border: 2px solid #000000;
+  color: #000000;
+}
+
 
 .tabs{
   text-align: center;
@@ -77,20 +110,22 @@
 
 .tabs__articles{
   padding-top: 4rem;
+  padding-left: 5rem;
   width: 1200px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min-content, 360px));
-  column-gap: 2rem;
-  row-gap: 2rem;
-  justify-items: center;
+  column-gap: 0.2rem;
+  row-gap: 1rem;
+  justify-items: right;
 }
 
 .tabs__cards{
-  max-width: 380px;
+  width: 340px;
   text-align: left;
   background-color: #f1f1f1;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.244);
+  
 }
 
 .tabs__cards img {
@@ -100,7 +135,7 @@
 }
 
 .tabs__cards:hover{
-  transform: translateY(-0.5rem);
+  transform: translateY(-0.7rem);
   transition: all 1s cubic-bezier(.215, .61, .355, 1);
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.759);
 }
