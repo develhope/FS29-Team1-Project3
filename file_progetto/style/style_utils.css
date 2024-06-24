@@ -1,88 +1,234 @@
 /* Blocchi univoci */
-.hero__section {
-  margin: 0;
-  height: 450px;
+
+/* Style hero */
+.hero {
   width: 100%;
-  background: url(../assest/images/img_hero.jpg) no-repeat center center;
-  background-size: cover;
+  height: 450px;
+  background-size: contain;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  position: relative;
+}
+.hero__img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.hero__content {
+  z-index: 99;
+  height: auto;
+  width: 38%;
+  margin-left: 1.8rem;
+}
+.hero__icons img {
+  z-index: 99;
+  width: 100%;
+  height: auto;
 }
 
-.hero__section__content {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  justify-content: center;
-  left: 0;
-  padding: 32px;
-  text-align: center;
-  top: 0;
+.hero__texts {
   width: 100%;
-  font-size: 18px;
-  color: #f3f3f3;
-}
-.hero__section__content__items {
-  padding: 0 63% 5% 0;
-  width: 500px;
-}
-.hero__section__content__items button {
-  background: none;
-  color: #fff;
-  font-size: 18px;
-  padding: 18px 30px;
-  border-radius: 3px;
-  border: 2px solid #f3f3f3;
-  height: 400px;
-  background: url("../assest/images/main/img_hero.jpg") no-repeat center center;
-  background-size: cover;
-}
-.hero__section__content {
+  height: auto;
   text-align: center;
-  width: 420px;
-  color: white;
+  color: #eaeaea;
+}
+.hero__button {
+  text-decoration: none;
+  padding: 15px 35px;
+  background-color: rgba(240, 248, 255, 0);
+  border-radius: 2px;
+  border: 1px solid #eaeaea;
+  color: #eaeaea;
+}
+
+/* Syle Giochi in Evidenza */
+
+/* General Giochi in Evidenza */
+.div_format_giochi_evidenza {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.div_format_game {
+  margin: 0 auto;
+  padding: 0.5rem;
+  width: 80%;
+  height: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.7em;
+  justify-content: center;
+}
+.div_one_game {
+  width: 28%;
+  aspect-ratio: 1/1;
+  display: flex;
+}
+.div_one_game a {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+/* Immagine di background(bg_img) */
+.img_giochi_evidenza {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+/* Opacità nera tra logo e bg_img */
+.div_one_game a .soft_dark {
+  position: absolute;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+/* Logo del gioco */
+.logo_giochi_evidenza {
+  position: absolute;
+  z-index: 1;
+  align-self: center;
+  height: 20%;
+  width: 50%;
+}
+/* Contenuti dell'hover */
+.bg_gradient {
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 143, 0),
+    rgba(255, 42, 42, 0)
+  );
+  display: none;
+  position: absolute;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+}
+.div_one_game a h5 {
+  display: none;
+  position: flex;
+  z-index: 1;
+  width: 50%;
+  height: 20%;
+  margin-top: 3rem;
+}
+/* Effetto hover */
+
+.div_one_game a:hover {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  transform: 1s;
+}
+.div_one_game a:hover .logo_giochi_evidenza {
+  transition: 0.5s;
+  transform: translate(0px, -80%);
+}
+.div_one_game a:hover .bg_gradient {
+  display: block;
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 143, 0.8),
+    rgba(255, 42, 42, 0.8)
+  );
+  transition: all 5s;
+}
+.div_one_game a:hover h5 {
+  transition: 0.5s;
+  display: block;
+  color: #eaeaea;
+  font-size: 100%;
+  align-self: center;
+  text-align: center;
+}
+
+/* Style Ultime novità */
+
+.tabs {
+  text-align: center;
+  margin-top: 2rem;
+}
+.tabs__container {
+  margin: 0 auto;
+  border-bottom: 1px solid grey;
+}
+.tabs__btn {
+  padding: 1.4rem;
+  background: none;
+  border: 2px solid transparent;
   font-size: 18px;
 }
-.ufc {
-  background: url("../assest/images/main/giochi_evidenza/ufc-5-background.jpg")
-    no-repeat center center;
-  background-size: 100% 100%;
-  /* overlay:auto; */
+.tabs__btn:hover {
+  background-color: rgb(191, 191, 191);
+  border-bottom: 2px solid red;
 }
-.ufc_logo {
-  /* display: flex;
-  align-self: center;
-  justify-self: center; */
-  height: 2.5em;
-  width: 50%;
-  /* position: relative;
-  top: 130px; */
-  /* border: 2px solid rgb(255, 128, 0); */
+.tabs__links span {
+  border: 1px solid grey;
+  height: 1.4rem;
 }
-.fc_24 {
-  background: url("../assest/images/main/giochi_evidenza/fc24.jpeg") no-repeat
-    center center;
-  background-size: 100% 100%;
+.tabs__links {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.f1_23 {
-  background: url("../assest/images/main/giochi_evidenza/f1-background.jpg")
-    no-repeat center center;
-  background-size: 100% 100%;
+.tabs__articles {
+  padding-top: 4rem;
+  width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min-content, 360px));
+  column-gap: 2rem;
+  row-gap: 2rem;
+  justify-items: center;
 }
-.nfs_unbound {
-  background: url("../assest/images/main/giochi_evidenza/nfs-unbound.png")
-    no-repeat center center;
-  background-size: 100% 100%;
+.tabs__cards {
+  max-width: 380px;
+  text-align: left;
+  background-color: #f1f1f1;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.244);
 }
-.the_sims_4 {
-  background: url("../assest/images/main/giochi_evidenza/the-sims-4.jpg")
-    no-repeat center center;
-  background-size: 100% 100%;
+
+.tabs__cards img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
-.apex {
-  background: url("../assest/images/main/giochi_evidenza/apex-legends.jpg")
-    no-repeat center center;
-  background-size: 100% 100%;
+
+.tabs__cards:hover {
+  transform: translateY(-0.5rem);
+  transition: all 1s cubic-bezier(0.215, 0.61, 0.355, 1);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.759);
 }
-.hero__section__content__items button a {
-  color: #fff;
+.cards__content {
+  margin: 1rem;
 }
+.text-red {
+  color: red;
+  padding-right: 1rem;
+  font-weight: bold;
+  font-size: 12px;
+}
+.article__btn {
+  width: 1200px;
+  margin: 0 auto;
+  border: 1px solid red;
+}
+
+.df {
+  display: flex;
+  justify-content: center;
+}
+
+/* Forse da cancellare */

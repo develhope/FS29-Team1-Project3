@@ -16,19 +16,321 @@
   <body>
     <header></header>
     <main>
-      <section class="hero__section">
-        <div class="hero__section__content">
-          <div class="hero__section__content__items">
+      <section class="hero">
+        <img
+          class="hero__img"
+          src="../file_progetto/assest/images/main/img_hero.jpg"
+          alt=""
+        />
+        <div class="hero__content">
+          <div class="hero__icons">
             <img src="../file_progetto/assest/icons/logo_hero.png" alt="" />
-            <p class="pb-1">
+          </div>
+          <div class="hero__texts fz-3">
+            <p>
               Scendi in pista ed entra a far parte dei 20 in EA SPORTS™ F1® 24,
               il videogioco ufficiale del 2024 FIA Formula One World
               Championship™
             </p>
+            <button class="hero__button mt-3 fz-3">Acquista Ora</button>
+          </div>
+        </div>
+      </section>
+      <!-- Giochi in evidenza -->
+      <section class="div_format_giochi_evidenza">
+        <div class="fz-5 mt-3">
+          <h2>Giochi in evidenza</h2>
+        </div>
 
+        <ul class="div_format_game">
+          <li class="div_one_game">
+            <a href="">
+              <div class="soft_dark"></div>
+              <img
+                src="./assest/images/main/giochi_evidenza/ufc-5-background.jpg"
+                alt=""
+                srcset=""
+                class="img_giochi_evidenza"
+              />
+              <img
+                src="./assest/icons/giochi_evidenza/ufc-5-logo.svg"
+                alt="Logo UFC 5"
+                class="logo_giochi_evidenza"
+              />
+              <!-- Hover -->
+              <div class="bg_gradient"></div>
+              <h5>Sito ufficiale</h5>
+            </a>
+          </li>
+
+          <li class="div_one_game fc_24">
+            <a href="">
+              <div class="soft_dark"></div>
+              <img
+                src="./assest/images/main/giochi_evidenza/fc24.jpeg"
+                alt=""
+                srcset=""
+                class="img_giochi_evidenza"
+              />
+              <img
+                src="./assest/icons/giochi_evidenza/fc24-logo.png"
+                alt="Logo FC 24"
+                class="logo_giochi_evidenza"
+              />
+              <!-- Hover -->
+              <div class="bg_gradient"></div>
+              <h5>Sito ufficiale</h5>
+            </a>
+          </li>
+
+          <li class="div_one_game f1_23">
+            <a href="">
+              <div class="soft_dark"></div>
+              <img
+                src="./assest/images/main/giochi_evidenza/f1-background.jpg"
+                alt=""
+                srcset=""
+                class="img_giochi_evidenza"
+              />
+              <img
+                src="./assest/icons/giochi_evidenza/f123-logo.png"
+                alt="Logo F1 23"
+                class="logo_giochi_evidenza"
+              />
+              <!-- Hover -->
+              <div class="bg_gradient"></div>
+              <h5>Sito ufficiale</h5>
+            </a>
+          </li>
+
+          <li class="div_one_game nfs_unbound">
+            <a href="">
+              <div class="soft_dark"></div>
+              <img
+                src="./assest/images/main/giochi_evidenza/nfs-unbound.png"
+                alt=""
+                srcset=""
+                class="img_giochi_evidenza"
+              />
+              <img
+                src="./assest/icons/giochi_evidenza/nfs-unbound-logo.png"
+                alt=""
+                class="logo_giochi_evidenza"
+              />
+              <!-- Hover -->
+              <div class="bg_gradient"></div>
+              <h5>Sito ufficiale</h5>
+            </a>
+          </li>
+
+          <li class="div_one_game the_sims_4">
+            <a href="">
+              <div class="soft_dark"></div>
+              <img
+                src="./assest/images/main/giochi_evidenza/the-sims-4.jpg"
+                alt=""
+                srcset=""
+                class="img_giochi_evidenza"
+              />
+              <img
+                src="./assest/icons/giochi_evidenza/the-sims-4-logo.png"
+                alt=""
+                class="logo_giochi_evidenza"
+              />
+              <!-- Hover -->
+              <div class="bg_gradient"></div>
+              <h5>Sito ufficiale</h5>
+            </a>
+          </li>
+
+          <li class="div_one_game apex">
+            <a href="">
+              <div class="soft_dark"></div>
+              <img
+                src="./assest/images/main/giochi_evidenza/apex-legends.jpg"
+                alt=""
+                srcset=""
+                class="img_giochi_evidenza"
+              />
+              <img
+                src="./assest/icons/giochi_evidenza/apex-legends-logo.svg"
+                alt=""
+                class="logo_giochi_evidenza"
+              />
+              <!-- Hover -->
+              <div class="bg_gradient"></div>
+              <h5>Sito ufficiale</h5>
+            </a>
+          </li>
+        </ul>
+
+        <div class="mt-3">
+          <a href="">
+            <button class="general__button mt-4 mb-4 fz-3">
+              Ultimi giochi
+            </button>
+          </a>
+        </div>
+      </section>
+      <section class="tabs">
+        <div class="tabs__container">
+          <h1 class="fz-4">Ultime Novità</h1>
+          <ul class="tabs__links">
+            <li><button class="tabs__btn">Notizie EA</button></li>
+            <span></span>
+            <li><button class="tabs__btn">EA SPORTS FC</button></li>
+            <span></span>
+            <li><button class="tabs__btn">Apex Legends</button></li>
+            <span></span>
+            <li><button class="tabs__btn">The Sims 4</button></li>
+            <span></span>
+            <li><button class="tabs__btn">Star Wars</button></li>
+            <span></span>
+            <li><button class="tabs__btn">F1</button></li>
+            <span></span>
+            <li><button class="tabs__btn">Battlefield</button></li>
+            <span></span>
+            <li><button class="tabs__btn">Need For Speed</button></li>
+          </ul>
+        </div>
+        <article class="tabs__articles">
+          <div class="tabs__cards">
+            <img
+              src="../file_progetto/assest/images/card_img.svg"
+              alt="Card Image"
+            />
+            <div class="cards__content">
+              <span class="text-red">Titolo card</span
+              ><span class="fz-1">21-giu-2024</span>
+              <h3>Lorem ipsum dolor sit amet.</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Consequuntur, necessitatibus? Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Consequuntur, accusantium,
+                repellendus consequatur quia libero, omnis obcaecati nesciunt
+                vero molestiae impedit incidunt soluta pariatur beatae eaque
+                harum minus architecto! Magnam, obcaecati?
+              </p>
+            </div>
+          </div>
+          <div class="tabs__cards">
+            <img
+              src="../file_progetto/assest/images/card_img.svg"
+              alt="Card Image"
+            />
+            <div class="cards__content">
+              <span class="text-red">Titolo card</span
+              ><span class="fz-1">21-giu-2024</span>
+              <h3>Lorem ipsum dolor sit amet.</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Consequuntur, necessitatibus? Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Consequuntur, accusantium,
+                repellendus consequatur quia libero, omnis obcaecati nesciunt
+                vero molestiae impedit incidunt soluta pariatur beatae eaque
+                harum minus architecto! Magnam, obcaecati?
+              </p>
+            </div>
+          </div>
+          <div class="tabs__cards">
+            <img
+              src="../file_progetto/assest/images/card_img.svg"
+              alt="Card Image"
+            />
+            <div class="cards__content">
+              <span class="text-red">Titolo card</span
+              ><span class="fz-1">21-giu-2024</span>
+              <h3>Lorem ipsum dolor sit amet.</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Consequuntur, necessitatibus? Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Consequuntur, accusantium,
+                repellendus consequatur quia libero, omnis obcaecati nesciunt
+                vero molestiae impedit incidunt soluta pariatur beatae eaque
+                harum minus architecto! Magnam, obcaecati?
+              </p>
+            </div>
+          </div>
+          <div class="tabs__cards">
+            <img
+              src="../file_progetto/assest/images/card_img.svg"
+              alt="Card Image"
+            />
+            <div class="cards__content">
+              <span class="text-red">Titolo card</span
+              ><span class="fz-1">21-giu-2024</span>
+              <h3>Lorem ipsum dolor sit amet.</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Consequuntur, necessitatibus? Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Consequuntur, accusantium,
+                repellendus consequatur quia libero, omnis obcaecati nesciunt
+                vero molestiae impedit incidunt soluta pariatur beatae eaque
+                harum minus architecto! Magnam, obcaecati?
+              </p>
+            </div>
+          </div>
+          <div class="tabs__cards">
+            <img
+              src="../file_progetto/assest/images/card_img.svg"
+              alt="Card Image"
+            />
+            <div class="cards__content">
+              <span class="text-red">Titolo card</span
+              ><span class="fz-1">21-giu-2024</span>
+              <h3>Lorem ipsum dolor sit amet.</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Consequuntur, necessitatibus? Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Consequuntur, accusantium,
+                repellendus consequatur quia libero, omnis obcaecati nesciunt
+                vero molestiae impedit incidunt soluta pariatur beatae eaque
+                harum minus architecto! Magnam, obcaecati?
+              </p>
+            </div>
+          </div>
+          <div class="tabs__cards">
+            <img
+              src="../file_progetto/assest/images/card_img.svg"
+              alt="Card Image"
+            />
+            <div class="cards__content">
+              <span class="text-red">Titolo card</span
+              ><span class="fz-1">21-giu-2024</span>
+              <h3>Lorem ipsum dolor sit amet.</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Consequuntur, necessitatibus? Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Consequuntur, accusantium,
+                repellendus consequatur quia libero, omnis obcaecati nesciunt
+                vero molestiae impedit incidunt soluta pariatur beatae eaque
+                harum minus architecto! Magnam, obcaecati?
+              </p>
+            </div>
+          </div>
+        </article>
+        <button class="general__button mt-4 mb-4 fz-3">Più Dettagli</button>
+      </section>
+      <section class="hero mt-3">
+        <img
+          class="hero__img"
+          src="../file_progetto/assest/images/hero__bottom.jpg"
+          alt=""
+        />
+        <div class="hero__content">
+          <div class="hero__icons">
+            <img
+              src="../file_progetto/assest/icons/icon-hero__bottom.svg"
+              alt=""
+            />
+          </div>
+          <div class="hero__texts fz-3">
             <p>
-              <button class="pb-1"><a href="#">Acquista ora </a></button>
+              Scendi in pista ed entra a far parte dei 20 in EA SPORTS™ F1® 24,
+              il videogioco ufficiale del 2024 FIA Formula One World
+              Championship™
             </p>
+            <button class="hero__button mt-3 fz-3">Acquista Ora</button>
           </div>
         </div>
         <div class="hero__section__content">
@@ -41,126 +343,6 @@
             videogioco ufficiale del 2024 FIA Formula One World Championship™
           </h6>
           <button>Acquista ora</button>
-        </div>
-      </section>
-      <!-- Giochi in evidenza -->
-      <section>
-        <div class="div_format_giochi_evidenza">
-          <ul>
-            <li><h2>GIOCHI IN EVIDENZA</h2></li>
-            <div class="div_format_game">
-              <div class="div_one_game ufc">
-                <li>
-                  <a href="">
-                    <!-- <img
-                      src="./assest/images/main/giochi_evidenza/ufc-5-background.jpg"
-                      alt=""
-                      srcset=""
-                      class="ufc"
-                    /> -->
-                    <img
-                      src="./assest/icons/giochi_evidenza/ufc-5-logo.svg"
-                      alt="Logo UFC 5"
-                      class="ufc_logo"
-                    />
-                  </a>
-                </li>
-              </div>
-
-              <div class="div_one_game fc_24">
-                <li>
-                  <a href="">
-                    <!-- <img
-                      src="./assest/images/main/giochi_evidenza/fc24.jpeg"
-                      alt=""
-                      srcset=""
-                      class="fc_24"
-                    /> -->
-                    <img
-                      src="./assest/icons/giochi_evidenza/fc24-logo.png"
-                      alt="Logo FC 24"
-                      class="ufc_logo"
-                    />
-                  </a>
-                </li>
-              </div>
-              <div class="div_one_game f1_23">
-                <li>
-                  <a href="">
-                    <!-- <img
-                      src="./assest/images/main/giochi_evidenza/f1-background.jpg"
-                      alt=""
-                      srcset=""
-                      class="f1_23"
-                    /> -->
-                    <img
-                      src="./assest/icons/giochi_evidenza/f123-logo.png"
-                      alt="Logo F1 23"
-                      class="ufc_logo"
-                    />
-                  </a>
-                </li>
-              </div>
-              <div class="div_one_game nfs_unbound">
-                <li>
-                  <a href="">
-                    <!-- <img
-                      src="./assest/images/main/giochi_evidenza/nfs-unbound.png"
-                      alt=""
-                      srcset=""
-                      class="nfs_unbound"
-                    /> -->
-                    <img
-                      src="./assest/icons/giochi_evidenza/nfs-unbound-logo.png"
-                      alt=""
-                      class="ufc_logo"
-                    />
-                  </a>
-                </li>
-              </div>
-              <div class="div_one_game the_sims_4">
-                <li>
-                  <a href="">
-                    <!-- <img
-                      src="./assest/images/main/giochi_evidenza/the-sims-4.jpg"
-                      alt=""
-                      srcset=""
-                      class="the_sims_4"
-                    /> -->
-                    <img
-                      src="./assest/icons/giochi_evidenza/the-sims-4-logo.png"
-                      alt=""
-                      class="ufc_logo"
-                    />
-                  </a>
-                </li>
-              </div>
-              <div class="div_one_game apex">
-                <li>
-                  <a href="">
-                    <!-- <img
-                      src="./assest/images/main/giochi_evidenza/apex-legends.jpg"
-                      alt=""
-                      srcset=""
-                      class="apex"
-                    /> -->
-                    <img
-                      src="./assest/icons/giochi_evidenza/apex-legends-logo.svg"
-                      alt=""
-                      class="ufc_logo"
-                    />
-                  </a>
-                </li>
-              </div>
-            </div>
-            <div class="mt-3">
-              <li>
-                <a href=""
-                  ><button class="general__button">Ultimi giochi</button></a
-                >
-              </li>
-            </div>
-          </ul>
         </div>
       </section>
     </main>
