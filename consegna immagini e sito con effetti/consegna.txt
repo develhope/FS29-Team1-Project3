@@ -14,7 +14,7 @@ usare issue di github per assegnare i compiti e i vari punti
     assignerss: a persone
     label: per tipo di lavorazione, enhacment oppure bug o issues
 
-tempo per completamento: 15-07-24
+tempo per completamento: 22-07-24
 
 Ordine di pagine:
 -homepage

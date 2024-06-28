@@ -1,6 +1,95 @@
 /* Blocchi univoci */
 
+/* Navbar */
+
+.nav2 {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  align-items: center;
+  display: flex;
+  gap: 1rem;
+  height: 60px;
+  padding-left: 1.5rem;
+}
+.dn {
+  display: none;
+}
+
+.box-navbar {
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
+  margin-left: 2.5rem;
+}
+.box-navbar li {
+  display: inline-block;
+}
+.image-ea {
+  margin-left: 27px;
+}
+.bottom-menù-container {
+  position: relative;
+  display: inline-block;
+}
+.button-menù {
+  background: none;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 1.3rem;
+}
+.navcircle {
+  background-color: black;
+  border-radius: 50%;
+  width: 4px;
+  height: 4px;
+}
+
+.list-menù {
+  font-size: 1.1rem;
+  font-weight: 100;
+}
+.navbutton {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 0.5rem;
+  margin-right: 2rem;
+}
+.nav1 {
+  overflow: hidden;
+  background-color: black;
+  height: 40px;
+}
+.nav1 ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.button {
+  height: 1.5rem;
+  width: 2rem;
+  background-color: black;
+  border: none;
+}
+.account-button {
+  height: 100%;
+  width: 100%;
+}
+
+.FaQ-button {
+  height: 100%;
+  width: 100%;
+}
+.logo-button {
+  height: 100%;
+  width: 100%;
+}
+
 /* Style hero */
+
 .hero {
   width: 100%;
   height: 450px;
@@ -10,6 +99,7 @@
   align-items: center;
   position: relative;
 }
+
 .hero__img {
   position: absolute;
   width: 100%;
@@ -166,10 +256,10 @@
   z-index: 1;
   width: 100%;
   height: 100%;
-  transition: background-color 1s ease-out;
+  /* transition: background-color 1s ease-out;
   -webkit-transition: background-color 1s ease-out;
   -o-transition: background-color 1s ease-out;
-  -moz-transition: background-color 1s ease-out;
+  -moz-transition: background-color 1s ease-out; */
 }
 .div_one_game a h5 {
   display: none;
@@ -194,11 +284,11 @@
   transform: translate(0px, -80%);
 }
 .div_one_game a:hover .bg_gradient {
-  /* background-color: linear-gradient(
+  background-color: linear-gradient(
     to right,
     rgba(0, 0, 143, 0.8),
     rgba(255, 42, 42, 0.8)
-  ); */
+  );
   background-color: red;
 }
 .div_one_game a:hover h5 {
