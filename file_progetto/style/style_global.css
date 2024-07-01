@@ -44,10 +44,20 @@ a {
 .general__button {
   text-decoration: none;
   padding: 1rem 2rem;
-  background-color: rgba(240, 248, 255, 0);
+  background-color: rgba(255, 255, 255, 0);
   border-radius: 5px;
   border: 2px solid black;
+  cursor: pointer;
 }
+.general__button a{
+  color: black;
+}
+.general__button:hover{
+  transition: all 1s;
+  transform: scale(1.1);
+}
+
+
 /*stile testi e font size */
 
 .fz-1{font-size: 10px;}

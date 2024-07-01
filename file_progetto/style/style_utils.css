@@ -24,7 +24,7 @@
   z-index: 99;
   height: auto;
   width: 50%;
-  margin-left: 10rem;
+  padding: 11%;
   display: flex;
   flex-direction: column;
 }
@@ -91,9 +91,11 @@
   border: 2px solid transparent;
   font-size: 18px;
 }
-.tabs__btn:hover{
-  background-color: rgb(191, 191, 191);
+.tabs__btn:focus{
   border-bottom: 2px solid red;
+  animation: my-animation 5s 3 ease-in-out;
+  transition: all 1s;
+  background-color: rgb(191, 191, 191);
 }
 
 .tabs__links span{
@@ -102,26 +104,28 @@
 }
 .tabs__links{
   width: 1200px;
-  margin: 0 auto;
+  margin: 0.2rem auto;
   display: flex;
   justify-content: center;
   align-items: center;
+
+}
+.tabs__links li:hover{
+  background-color: rgb(191, 191, 191);
 }
 
+
 .tabs__articles{
-  padding-top: 4rem;
-  padding-left: 5rem;
   width: 1200px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min-content, 360px));
-  column-gap: 0.2rem;
+  grid-template-columns:repeat(3, 1fr); /*repeat(auto-fit, minmax(min-content, 360px)); */
   row-gap: 1rem;
-  justify-items: right;
+  justify-items: center;
 }
 
 .tabs__cards{
-  width: 340px;
+  width: 90%;
   text-align: left;
   background-color: #f1f1f1;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.244);
