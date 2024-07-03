@@ -1,6 +1,7 @@
 .navbutton {
-  gap: 0.5rem;
+  gap: 1rem;
   margin-right: 2rem;
+  display: flex;
 }
 .nav1 {
   overflow: hidden;
@@ -76,8 +77,4 @@
 .list-menù {
   font-size: 1.1rem;
   font-weight: 100;
-}
-.navbutton {
-  display: flex;
-  gap: 1rem;
 }
