@@ -8,19 +8,29 @@
     <link rel="stylesheet" href="style/style_global.css" />
     <link rel="stylesheet" href="style/style_utils.css" />
 
+    <!-- Media Query -->
+    <link rel="stylesheet" href="./style/media.css" />
+
     <!-- Script -->
     <script src="app.js"></script>
 
     <title>Clone Electronict Arts</title>
   </head>
   <body>
-    <header>
+    <!-- <header>
       <nav class="nav1">
         <ul class="navbutton">
           <li>
             <a href="">
               <button class="button">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="grey" class="account-button" viewBox="0 0 16 16">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="grey"
+                  class="account-button"
+                  viewBox="0 0 16 16"
+                >
                   <path
                     d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"
                   />
@@ -31,7 +41,14 @@
           <li>
             <a href="">
               <button class="button">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="grey" class="FaQ-button" viewBox="0 0 16 16">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="grey"
+                  class="FaQ-button"
+                  viewBox="0 0 16 16"
+                >
                   <path
                     fill-rule="evenodd"
                     d="M4.475 5.458c-.284 0-.514-.237-.47-.517C4.28 3.24 5.576 2 7.825 2c2.25 0 3.767 1.36 3.767 3.215 0 1.344-.665 2.288-1.79 2.973-1.1.659-1.414 1.118-1.414 2.01v.03a.5.5 0 0 1-.5.5h-.77a.5.5 0 0 1-.5-.495l-.003-.2c-.043-1.221.477-2.001 1.645-2.712 1.03-.632 1.397-1.135 1.397-2.028 0-.979-.758-1.698-1.926-1.698-1.009 0-1.71.529-1.938 1.402-.066.254-.278.461-.54.461h-.777ZM7.496 14c.622 0 1.095-.474 1.095-1.09 0-.618-.473-1.092-1.095-1.092-.606 0-1.087.474-1.087 1.091S6.89 14 7.496 14"
@@ -43,7 +60,13 @@
           <li>
             <a href="https://www.ea.com/it-it">
               <button class="button">
-                <svg xmlns="http://www.w3.org/2000/svg" aria-label="Electronic Arts" fill="grey" class="logo-button" viewBox="100 100 350 300">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-label="Electronic Arts"
+                  fill="grey"
+                  class="logo-button"
+                  viewBox="100 100 350 300"
+                >
                   <path
                     d="M158 172l-21 34 137-1 21-33zm165 0l-85 134h-94l22-33h58l21-33H116l-22 33h31l-42 67h174l66-105 24 38h-21l-21 33h63l21 34h40z"
                   />
@@ -137,10 +160,10 @@
           </li>
         </ul>
       </nav>
-    </header>
-    <main>
+    </header> -->
+    <main class="bgc">
       <!-- Hero top -->
-      <section class="hero">
+      <!-- <section class="hero">
         <img class="hero__img" src="../file_progetto/assest/images/main/img_hero.jpg" alt="" />
         <div class="hero__content">
           <div class="hero_icon_container">
@@ -154,7 +177,7 @@
           </div>
           <button class="hero__button fz-3">Acquista ora</button>
         </div>
-      </section>
+      </section> -->
       <!-- Giochi in evidenza -->
       <section class="div_format_giochi_evidenza">
         <div class="mt-3">
@@ -184,7 +207,7 @@
             </a>
           </li>
 
-          <li class="div_one_game f1_23">
+          <li class="div_one_game">
             <a href="">
               <div class="soft_dark"></div>
               <img src="./assest/images/main/giochi_evidenza/f1-background.jpg" alt="" srcset="" class="img_giochi_evidenza" />
@@ -195,7 +218,7 @@
             </a>
           </li>
 
-          <li class="div_one_game nfs_unbound">
+          <li class="div_one_game">
             <a href="">
               <div class="soft_dark"></div>
               <img src="./assest/images/main/giochi_evidenza/nfs-unbound.png" alt="" srcset="" class="img_giochi_evidenza" />
@@ -206,7 +229,7 @@
             </a>
           </li>
 
-          <li class="div_one_game the_sims_4">
+          <li class="div_one_game">
             <a href="">
               <div class="soft_dark"></div>
               <img src="./assest/images/main/giochi_evidenza/the-sims-4.jpg" alt="" srcset="" class="img_giochi_evidenza" />
@@ -217,7 +240,7 @@
             </a>
           </li>
 
-          <li class="div_one_game apex">
+          <li class="div_one_game">
             <a href="">
               <div class="soft_dark"></div>
               <img src="./assest/images/main/giochi_evidenza/apex-legends.jpg" alt="" srcset="" class="img_giochi_evidenza" />
@@ -240,21 +263,37 @@
         <h1 class="fz-5 mt-3">Ultime Novità</h1>
         <div class="tabs__container">
           <ul class="tabs__links pt-3">
-            <li><button class="tabs__btn tabs__btn__center fz-3">Notizie EA</button></li>
+            <li>
+              <button class="tabs__btn tabs__btn__center fz-3">Notizie EA</button>
+            </li>
             <span class="btn__separator"></span>
-            <li><button class="tabs__btn tabs__btn__center fz-3">EA SPORTS FC</button></li>
+            <li>
+              <button class="tabs__btn tabs__btn__center fz-3">EA SPORTS FC</button>
+            </li>
             <span class="btn__separator"></span>
-            <li><button class="tabs__btn tabs__btn__center fz-3">Apex Legends</button></li>
+            <li>
+              <button class="tabs__btn tabs__btn__center fz-3">Apex Legends</button>
+            </li>
             <span class="btn__separator"></span>
-            <li><button class="tabs__btn tabs__btn__center fz-3">The Sims 4</button></li>
+            <li>
+              <button class="tabs__btn tabs__btn__center fz-3">The Sims 4</button>
+            </li>
             <span class="btn__separator"></span>
-            <li><button class="tabs__btn tabs__btn__center fz-3">Star Wars</button></li>
+            <li>
+              <button class="tabs__btn tabs__btn__center fz-3">Star Wars</button>
+            </li>
             <span class="btn__separator"></span>
-            <li><button class="tabs__btn tabs__btn__center fz-3">F1</button></li>
+            <li>
+              <button class="tabs__btn tabs__btn__center fz-3">F1</button>
+            </li>
             <span class="btn__separator"></span>
-            <li><button class="tabs__btn tabs__btn__center fz-3">Battlefield</button></li>
+            <li>
+              <button class="tabs__btn tabs__btn__center fz-3">Battlefield</button>
+            </li>
             <span class="btn__separator"></span>
-            <li><button class="tabs__btn tabs__btn__center fz-3">Need For Speed</button></li>
+            <li>
+              <button class="tabs__btn tabs__btn__center fz-3">Need For Speed</button>
+            </li>
           </ul>
         </div>
         <article class="tabs__articles pt-3">
@@ -334,7 +373,7 @@
         <button class="general__button mt-4 mb-4 fz-3">Più Dettagli</button>
       </section>
       <!-- Hero Bottom -->
-      <section class="hero mt-3">
+      <!-- <section class="hero mt-3">
         <img class="hero__img" src="../file_progetto/assest/images/hero__bottom.jpg" alt="" />
         <div class="hero__content_bottom">
           <div>
@@ -353,9 +392,9 @@
           <h2 class="fz-4 mt-1">Giocatori e genitori: il controllo dei videogiochi è nelle vostre mani</h2>
           <button class="general__button fz-3">Scopri di Più</button>
         </div>
-      </div>
+      </div> -->
     </main>
-    <footer class="footer">
+    <!-- <footer class="footer">
       <section class="section_one">
         <div class="section_one_container">
           <div class="div_one">
@@ -510,6 +549,6 @@
           </div>
         </div>
       </section>
-    </footer>
+    </footer> -->
   </body>
 </html>

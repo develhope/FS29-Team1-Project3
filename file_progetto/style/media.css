@@ -1,0 +1,102 @@
+/* Media da compilare */
+
+/* Laptop grande */
+@media screen and (max-width: 1024px) {
+  /*---- Header ----*/
+  /*nav1 */
+
+  /* nav2*/
+
+  /*---- Main ----*/
+  /* Giochi in Evidenza */
+  .div_format_giochi_evidenza {
+    width: 100%;
+  }
+  /* Ultime Novità */
+  .tabs__links {
+    width: auto;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  .tabs__btn {
+    width: auto;
+    text-align: center;
+    padding: 0.5rem 1rem;
+    white-space: nowrap; 
+  }
+  .tabs__articles{
+    width: 100%;
+  }
+  /*---- Footer ----*/
+  /* Section one */
+
+  /* snd */
+}
+
+/* Tablet */
+@media screen and (max-width: 768px) {
+  /*---- Header ----*/
+  /*nav1 */
+
+  /* nav2*/
+
+  /*---- Main ----*/
+  /* Giochi in Evidenza */
+  .div_format_giochi_evidenza {
+    width: 100%;
+  }
+  .div_one_game{
+    width: 40%;
+  }
+  /* Ultime Novità */
+  .tabs__cards{
+    width: 40%;
+  }
+  /*---- Footer ----*/
+  /* Section one */
+
+  /* snd */
+}
+
+/* Telefono cellulare medio */
+@media screen and (max-width: 426px) {
+  /*---- Header ----*/
+  /*nav1 */
+
+  /* nav2*/
+
+  /*---- Main ----*/
+  /* Giochi in Evidenza */
+  .div_one_game{
+    width: 90%;
+  }
+  /* Ultime Novità */
+  .tabs__cards{
+    width: 90%;
+  }
+  .tabs__cards img{
+    display: none;
+  }
+  /*---- Footer ----*/
+  /* Section one */
+
+  /* snd */
+}
+
+/* Telefono cellurare piccolo */
+@media screen and (max-width: 320px) {
+  /*---- Header ----*/
+  /*nav1 */
+
+  /* nav2*/
+
+  /*---- Main ----*/
+  /* Giochi in Evidenza */
+
+  /* Ultime Novità */
+
+  /*---- Footer ----*/
+  /* Section one */
+
+  /* snd */
+}
