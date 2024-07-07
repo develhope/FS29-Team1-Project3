@@ -131,7 +131,7 @@
 .hero__content_bottom {
   margin: 0 auto;
   z-index: 99;
-  width: 1200px;
+  width: 1440px;
   display: flex;
   flex-direction: column;
   align-items: left;
@@ -153,13 +153,13 @@
 .bar__content {
   margin: 0 auto;
   padding: 1rem;
-  max-width: 1200px;
+  width: 1440px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 0;
 }
-.bar__content h2{
+.bar__content h2 {
   width: 40%;
 }
 
@@ -168,11 +168,13 @@
 /* General Giochi in Evidenza */
 .div_format_giochi_evidenza {
   margin: 0 auto;
-  width: 1200px;
+  width: 1440px;
   display: flex;
   flex-flow: column;
   justify-content: center;
   align-items: center;
+  position: relative;
+  z-index: 0;
 }
 
 .div_format_giochi_evidenza div:first-child h2 {
@@ -287,20 +289,20 @@
 
 .tabs__links {
   margin: 0 auto;
-  width: 1200px;
+  width: 1440px;
   display: flex;
   justify-content: center;
   align-items: center;
-  /* overflow-x: auto;
+  /*overflow-x: auto;
   white-space: nowrap;  da inserire nelle media queries*/
 }
-.tabs__links li{
+.tabs__links li {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.tabs__btn{
+.tabs__btn {
   position: relative;
   background-color: #f3f3f3;
   color: #181818;
@@ -308,18 +310,18 @@
   border: none;
   outline: none;
 }
-.tabs__btn:hover{
-  background-color: #DEDEDE;
+.tabs__btn:hover {
+  background-color: #dedede;
 }
-.tabs__btn:focus{
-  background-color: #DEDEDE;
+.tabs__btn:focus {
+  background-color: #dedede;
 }
-.btn__separator{
+.btn__separator {
   border-right: 1px solid grey;
   height: 1rem;
 }
-.tabs__btn:after{
-  content: '';
+.tabs__btn:after {
+  content: "";
   position: absolute;
   width: 70%;
   height: 0.1rem;
@@ -329,16 +331,16 @@
   margin-bottom: 0.1rem;
 }
 
-.tabs__btn__center::after{
+.tabs__btn__center::after {
   transform: scale(0, 1);
   transition: transform 0.5s ease;
 }
-.tabs__btn__center:focus::after{
+.tabs__btn__center:focus::after {
   transform: scale(1, 2);
 }
 
-.tabs__articles{
-  width: 1200px;
+.tabs__articles {
+  width: 1440px;
   margin: 0 auto;
   display: flex;
   gap: 1rem;
@@ -346,8 +348,7 @@
   justify-content: center;
 }
 
-
-.tabs__cards{
+.tabs__cards {
   width: 31%;
   text-align: left;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.244);
@@ -374,7 +375,6 @@
   font-size: 1rem;
 }
 
-
 .df {
   display: flex;
   justify-content: center;
@@ -388,7 +388,7 @@
 .section_one {
   margin: 0 auto;
   width: 100%;
-  height: 55%;
+  /* height: 55%; */
   display: flex;
   flex-direction: column;
   align-content: space-between;
@@ -396,7 +396,7 @@
 }
 .section_one_container {
   margin: 0 auto;
-  width: 1200px;
+  width: 1440px;
 }
 .div_one {
   margin-top: 5%;
@@ -477,8 +477,8 @@
 
 .snd {
   margin: 1rem auto;
-  width: 1200px;
-  height: 50%;
+  width: 1440px;
+  /* height: 50%; */
   display: flex;
   /* background-color: rgb(255, 255, 255); */
 }

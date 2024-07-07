@@ -1,0 +1,55 @@
+/* Media da compilare */
+
+/* Telefono cellurare piccolo */
+@media screen and (max-width: 320px) {
+  /*---- Header ----*/
+  /*nav1 */
+
+  /* nav2*/
+
+  /*---- Main ----*/
+  /* Giochi in Evidenza */
+
+  /* Ultime Novità */
+
+  /*---- Footer ----*/
+  /* Section one */
+
+  /* snd */
+}
+
+/* Telefono cellulare medio */
+@media screen and (max-width: 425px) {
+  /*---- Header ----*/
+  /*nav1 */
+
+  /* nav2*/
+
+  /*---- Main ----*/
+  /* Giochi in Evidenza */
+
+  /* Ultime Novità */
+
+  /*---- Footer ----*/
+  /* Section one */
+
+  /* snd */
+}
+
+/* Tablet */
+@media screen and (max-width: 768px) {
+  /*---- Header ----*/
+  /*nav1 */
+
+  /* nav2*/
+
+  /*---- Main ----*/
+  /* Giochi in Evidenza */
+
+  /* Ultime Novità */
+
+  /*---- Footer ----*/
+  /* Section one */
+
+  /* snd */
+}
