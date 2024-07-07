@@ -47,6 +47,7 @@ a {
 
 .general__button {
   text-decoration: none;
+  font-family: Verdana, Helvetica;
   padding: 20px;
   background-color: rgba(240, 248, 255, 0);
   border-radius: 2px;
