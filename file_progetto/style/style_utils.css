@@ -292,7 +292,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 .tabs__links li {
   display: flex;
@@ -337,7 +336,7 @@
   transform: scale(1, 2);
 }
 
-.tabs__articles{
+.tabs__articles {
   width: 1440px;
   margin: 0 auto;
   display: flex;
@@ -399,17 +398,19 @@
 .div_one {
   margin-top: 5%;
   border-bottom: 1px solid grey;
+  margin: 0 0 1rem 5rem;
   width: 100%;
   height: 30%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 5%;
+  margin-top: 3rem;
   border-bottom: 1px solid grey;
 }
 .div_p {
   width: 100%;
   height: 80%;
+  font-size: 14px;
 }
 .div_p a {
   color: red;
@@ -422,7 +423,7 @@
   width: 100%;
 }
 .ul_items {
-  margin: 0 0 1rem 0;
+  margin: 1rem 0 1rem 5rem;
   border: none;
   padding: 0;
   width: 70%;
@@ -440,16 +441,16 @@
   color: rgb(0, 0, 0);
   font-size: 0.9rem;
 }
+.ul_items li a:hover {
+  color: red;
+}
 
 .conversation {
-  
   text-align: center;
   align-items: center;
 
   height: 100%;
   width: 30%;
-
- 
 }
 .speak {
   width: 100%;
@@ -477,9 +478,15 @@
   width: 15%;
   height: 1.5rem;
 }
+
 .social li img {
   width: 100%;
   height: 100%;
+  /* background-color: cyan; */
+}
+.social li img:hover {
+  width: 2rem;
+  height: 2rem;
 }
 
 .snd {
@@ -551,7 +558,6 @@
 
   justify-content: right;
   gap: 3rem;
- 
 }
 .prezzi {
   display: flex;
@@ -572,6 +578,10 @@
   padding: 0.5rem 1rem 0;
 
   border: 1px solid rgb(177, 175, 175);
+}
+.button_economy:hover {
+  width: 92%;
+  height: 5rem;
 }
 .inside_economy {
   display: flex;
@@ -627,10 +637,15 @@
 
   height: 10%;
 }
+
 .ul_regione li a {
   width: 100%;
   height: 100%;
   color: rgb(0, 0, 0);
+  font-size: 14px;
+}
+.ul_regione li a:hover {
+  padding-left: 0.8rem;
 }
 
 .ul_regione li:nth-child(31),
@@ -672,6 +687,10 @@
 }
 .ul_regioni li a {
   color: black;
+  font-size: 14px;
+}
+.ul_regioni li a:hover {
+  padding-left: 0.8rem;
 }
 .prezzi:hover .ul_regioni {
   display: flex;
