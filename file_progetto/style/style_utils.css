@@ -645,7 +645,7 @@
   font-size: 14px;
 }
 .ul_regione li a:hover {
-  padding-left: 0.8rem;
+  padding-left: 0.5rem;
 }
 
 .ul_regione li:nth-child(31),
@@ -661,10 +661,10 @@
   width: 40rem;
   padding: 2rem 1rem 1rem 1rem;
 
-  /* padding-left: 4rem; */
+  
   display: none;
 
-  /* border: 2px solid brown; */
+  
 
   flex-wrap: wrap;
   position: absolute;
@@ -690,7 +690,7 @@
   font-size: 14px;
 }
 .ul_regioni li a:hover {
-  padding-left: 0.8rem;
+  padding-left: 0.5rem;
 }
 .prezzi:hover .ul_regioni {
   display: flex;
