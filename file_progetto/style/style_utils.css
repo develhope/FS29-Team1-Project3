@@ -690,9 +690,9 @@
   color: black;
   font-size: 14px;
 }
-/* .ul_regioni li a:hover {
+.ul_regioni li a:hover {
   padding-left: 0.5rem;
-} */
+}
 /* .prezzi:hover .ul_regioni {
   display: flex;
 } */
