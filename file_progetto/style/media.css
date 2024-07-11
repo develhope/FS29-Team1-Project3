@@ -13,10 +13,12 @@
     width: 100%;
   }
   /* Ultime Novità */
-  .tabs__links {
-    width: auto;
+  .tabs__links{    
+    width: 100%;
+    background-color: red;
     overflow-x: auto;
     white-space: nowrap;
+    justify-content:unset;
   }
   .tabs__btn {
     width: auto;
@@ -52,6 +54,7 @@
   .tabs__cards{
     width: 40%;
   }
+
   /*---- Footer ----*/
   /* Section one */
 

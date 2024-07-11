@@ -131,7 +131,7 @@
 .hero__content_bottom {
   margin: 0 auto;
   z-index: 99;
-  width: 1440px;
+  max-width: 1440px;
   display: flex;
   flex-direction: column;
   align-items: left;
@@ -153,7 +153,7 @@
 .bar__content {
   margin: 0 auto;
   padding: 1rem;
-  width: 1440px;
+  max-width: 1440px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -168,7 +168,7 @@
 /* General Giochi in Evidenza */
 .div_format_giochi_evidenza {
   margin: 0 auto;
-  width: 1440px;
+  max-width: 1440px;
   display: flex;
   flex-flow: column;
   justify-content: center;
@@ -287,18 +287,15 @@
 }
 
 .tabs__links {
+  max-width: 1440px;
   margin: 0 auto;
-  width: 1440px;
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow-x: auto;
+  white-space: nowrap;
+}
 
-}
-.tabs__links li {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 
 .tabs__btn {
   position: relative;
@@ -338,7 +335,7 @@
 }
 
 .tabs__articles{
-  width: 1440px;
+  max-width: 1440px;
   margin: 0 auto;
   display: flex;
   gap: 1rem;
@@ -394,7 +391,7 @@
 }
 .section_one_container {
   margin: 0 auto;
-  width: 1440px;
+  max-width: 1440px;
 }
 .div_one {
   margin-top: 5%;
@@ -475,7 +472,7 @@
 
 .snd {
   margin: 1rem auto;
-  width: 1440px;
+  max-width: 1440px;
   /* height: 50%; */
   display: flex;
   /* background-color: rgb(255, 255, 255); */
