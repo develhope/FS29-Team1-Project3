@@ -50,8 +50,72 @@
 
   /*---- Footer ----*/
   /* Section one */
+  .section_one_container {
+    width: 90%;
+    
 
+  }
+  .ul_items {
+    flex-wrap: wrap;
+  }
+  .ul_items li {
+    width: 21%;
+    padding: 0.5rem 0;
+
+    
+  }
+  .ul_items li a {
+    font-size: 0.8rem;
+    
+  }
   /* snd */
+  .snd {
+    width: 90%;
+  }
+  .ul_accordi {
+    width: 90%;
+  }
+  .ul_accordi li {
+    width: 49%;
+  }
+  .selection_group {
+    width: 100%;
+  }
+  .selezione {
+    flex-wrap: wrap;
+    width: 50%;
+    /* padding-top: 1rem; */
+    height: 60%;
+    height: 90%;
+   
+  }
+  .selezione li {
+   /* height: 70%;  */
+   padding: 0;
+   margin: 1rem 0 0 1rem;
+  
+   width: 45%;
+  
+   /* margin: 1rem 0 0 1rem; */
+  }
+  .selezione li a {
+    font-size: 0.9rem;;
+  }
+  .selezione li:nth-child(3) {
+    width: 12rem;
+  }
+  .selezione li:nth-child(5) {
+    width: 10rem;
+  }
+  .selezione li:nth-child(6) {
+    width: 8rem;
+  }
+  .selezione li:nth-child(7) {
+    width: 5rem;
+  }
+  .economy {
+    width: 50%;
+  }
 }
 
 /* Tablet */
