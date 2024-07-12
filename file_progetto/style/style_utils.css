@@ -570,20 +570,13 @@
   font-size: 1rem;
 }
 
-.df {
-  display: flex;
-  justify-content: center;
-}
-
 /* Footer */
-.df {
-  display: flex;
-  justify-content: center;
-}
 .footer {
-  width: 100vw;
+  width: 100%;
   background-color: rgb(255, 255, 255);
 }
+
+/* Prima Sezione */
 .section_one {
   margin: 0 auto;
   width: 100%;
@@ -595,10 +588,14 @@
 }
 .section_one_container {
   margin: 0 auto;
-  max-width: 1440px;
+  /* max-width: 1440px; */
+  width: 56%;
 }
 .div_one {
   margin-top: 5%;
+  margin: 0 0 1rem 0;
+  margin-top: 3rem;
+  border-bottom: 1px solid grey;
   border-bottom: 1px solid grey;
   width: 100%;
   height: 30%;
@@ -609,6 +606,7 @@
 .div_p {
   width: 100%;
   height: 80%;
+  font-size: 1rem;
 }
 .div_p a {
   color: red;
@@ -619,7 +617,7 @@
   display: flex;
 }
 .ul_items {
-  margin: 0 0 1rem 0;
+  margin: 1rem 0 1rem 0;
   border: none;
   padding: 0;
   width: 70%;
@@ -634,14 +632,13 @@
 }
 .ul_items li a {
   color: rgb(0, 0, 0);
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
-
 .conversation {
   width: 30%;
   height: 100%;
   text-align: center;
-  align-items: center; /* ? */
+  align-items: center;
 }
 .speak {
   width: 100%;
@@ -670,12 +667,21 @@
   display: flex;
   justify-content: right;
 }
-
 .social li img {
   width: 100%;
   height: 100%;
 }
 
+/* Hover Prima Sezione */
+.ul_items li a:hover {
+  color: red;
+}
+.social li img:hover {
+  width: 2rem;
+  height: 2rem;
+}
+
+/* Seconda Sezione */
 .snd {
   margin: 1rem auto;
   max-width: 1440px;
@@ -694,8 +700,8 @@
   aspect-ratio: 1/1;
 }
 .selection_accordi {
-  padding: 0;
   margin: 0;
+  padding: 0;
   width: 100%;
   height: 100%;
   display: flex;
@@ -729,16 +735,16 @@
   text-wrap: nowrap;
   color: black;
 }
-
 .selezione li:nth-child(4),
 .selezione li:nth-child(5),
 .selezione li:nth-child(6),
 .selezione li:nth-child(7) {
   width: 20%;
 }
+
 .economy {
-  height: 60%;
   width: 40%;
+  height: 60%;
   display: flex;
   justify-content: right;
   gap: 3rem;
@@ -752,11 +758,12 @@
 }
 .button_economy {
   border: 1px solid rgb(177, 175, 175);
+  border: 1px solid rgb(177, 175, 175);
+  padding: 0.5rem 1rem 0;
   padding: 0.5rem 1rem 0;
   width: 90%;
   text-align: left;
   text-wrap: nowrap;
-  background-color: white;
 }
 .inside_economy {
   margin-top: 1rem;
@@ -766,6 +773,7 @@
   width: 90%;
   text-align: left;
 }
+/* Arrow */
 .linea_sinistra {
   border: 1px solid gray;
   height: 0.8rem;
@@ -777,11 +785,8 @@
   border: 1px solid gray;
   height: 0.8rem;
   position: relative;
-  left: 0.3rem;
+  left: 0.2rem;
   rotate: 45deg;
-}
-.prezzi:hover .ul_regione {
-  display: flex;
 }
 .ul_regione {
   border-radius: 5px;
@@ -805,21 +810,25 @@
   height: 10%;
   text-align: left;
 }
+
 .ul_regione li a {
   width: 100%;
   height: 100%;
   color: rgb(0, 0, 0);
+  font-size: 14px;
 }
-
-.ul_regione li:nth-child(31),
-.ul_regione li:nth-child(30),
 .ul_regione li:nth-child(29),
+.ul_regione li:nth-child(30),
+.ul_regione li:nth-child(31),
 .ul_regione li:nth-child(32) {
   border: none;
 }
+
 .ul_regioni {
-  padding: 2rem 1rem 1rem 1rem;
   border-radius: 5px;
+  /* border: 2px solid brown; */
+  padding: 2rem 1rem 1rem 1rem;
+  /* padding-left: 4rem; */
   width: 40rem;
   height: 30rem;
   display: none;
@@ -832,46 +841,25 @@
   z-index: 99;
   box-shadow: 1px 1px 5px rgb(59, 58, 58);
   background-color: rgb(255, 255, 255);
-  /* border: 2px solid brown; */
-  /* padding-left: 4rem; */
 }
 .ul_regioni li {
+  border-bottom: 1px solid hsl(0, 1%, 80%);
   width: 30%;
   height: 10%;
-  border-bottom: 1px solid hsl(0, 1%, 80%);
   text-align: left;
 }
 .ul_regioni li a {
   color: black;
 }
-.prezzi:hover .ul_regioni {
-  display: flex;
+.ul_regioni li:nth-child(22),
+.ul_regioni li:nth-child(23),
+.ul_regioni li:nth-child(24) {
+  border: none;
 }
 
-.bottone_lingua {
-  width: 30%;
-}
-.bottone_lingua ul {
-  width: 40em;
-  height: 40em;
-  /* display: grid; */
-  display: none;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(9, 1fr);
-  text-align: center;
-  z-index: 2;
-  border: 1px solid gray;
-}
-.bottone_lingua ul li {
-  margin-top: 0.8rem;
-  padding: 1rem;
-}
-.bottone_lingua ul li a {
-  color: black;
-}
 .accordi_trust {
-  height: 50%;
   width: 100%;
+  height: 50%;
   display: flex;
   align-items: end;
   background-color: rgb(255, 255, 255);
@@ -879,9 +867,8 @@
 .accordi {
   margin-top: 1rem;
   padding: 0;
-  height: 100%;
   width: 60%;
-  background-color: rgb(255, 255, 255);
+  height: 100%;
 }
 .ul_accordi {
   margin: 0;
@@ -895,7 +882,7 @@
 .ul_accordi li {
   margin: 0 0.2rem 0.5rem;
   padding: 0;
-  width: 45%;
+  width: 33%;
   height: 22%;
   background-color: rgb(255, 255, 255);
 }
@@ -914,4 +901,30 @@
   justify-content: right;
   align-items: end;
   background-color: rgb(255, 255, 255);
+}
+
+/* Hover seconda sezione */
+.button_economy:hover {
+  width: 92%;
+  height: 5rem;
+}
+
+/* .prezzi:hover .ul_regione {
+  display: flex;
+}
+.prezzi:hover .ul_regioni {
+  display: flex;
+} */
+.ul_regione li:hover a {
+  padding-left: 0.5rem;
+  cursor: pointer;
+}
+.ul_regioni li:hover a {
+  padding-left: 0.5rem;
+  cursor: pointer;
+}
+
+/* Classi per JS DOM */
+.ul_show {
+  display: flex;
 }
