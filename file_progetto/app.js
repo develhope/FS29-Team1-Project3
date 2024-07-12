@@ -1,6 +1,6 @@
 const buttonEconomy = document.querySelectorAll(".button_economy");
 const ulRegione = document.querySelector(".ul_regione");
-const ul_regioni = document.querySelector(".ul_regioni");
+const ul_regioni = document.querySelector(".ul_lingua");
 const arrayLiRegione = ulRegione.children;
 console.log(buttonEconomy);
 console.log(ulRegione);
@@ -11,12 +11,11 @@ function addCheck() {
   //     arrayLiRegione[i].innerHTML += localStorage.getItem("check-dropbox");
   //   }
   // }
- ulRegione.classList.toggle("ul_show");
- ul_regioni.classList.remove("ul_show");
- ulRegione.setAttribute('autofocus', '')
+  ulRegione.classList.toggle("ul_show");
+  ul_regioni.classList.remove("ul_show");
+  ulRegione.setAttribute("autofocus", "");
 }
 buttonEconomy[0].addEventListener("click", () => {
- 
   ulRegione.addEventListener("focus", addCheck(), true);
 });
 buttonEconomy[1].addEventListener("click", () => {
@@ -33,12 +32,13 @@ for (let i = 0; i < arrayLiRegione.length; i++) {
     arrayLiRegione[i].innerHTML += localStorage.getItem("check-dropbox");
   });
 }
-ulRegione.addEventListener("blur", () => {
-  ulRegione.classList.remove("ul_show");
-}, true);
+ulRegione.addEventListener(
+  "blur",
+  () => {
+    ulRegione.classList.remove("ul_show");
+  },
+  true
+);
 buttonEconomy[1].addEventListener("blur", () => {
   ul_regioni.classList.remove("ul_show");
 });
-
-
-
