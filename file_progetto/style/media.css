@@ -140,6 +140,9 @@
   .hero__content{
     margin-left: 3.0rem;
   }
+  .hero__texts{
+    line-height: 1.3rem;
+  }
   /* Giochi in Evidenza */
   .div_format_giochi_evidenza {
     width: 100%;
