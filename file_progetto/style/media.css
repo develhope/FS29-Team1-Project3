@@ -2,19 +2,37 @@
 
 /* Laptop grande */
 @media screen and (max-width: 1024px) {
+  /* Global --> non toccare */ 
+  .fz-3 {
+    font-size: 0.8rem;
+  }
+  .hero__button{
+    padding: 0.8rem  1.4rem;
+  }
   /*---- Header ----*/
   /*nav1 */
 
   /* nav2*/
 
   /*---- Main ----*/
+  /* Hero top */
+  .hero{
+    height: 18rem;
+  }
+  .hero__icon{
+    width: 90%;
+  }
+  .hero_icon_container{
+    text-align: center;
+  }
+  
   /* Giochi in Evidenza */
   .div_format_giochi_evidenza {
     width: 100%;
   }
   /* Ultime Novità */
-  .tabs__links {
-    width: auto;
+  .tabs__links{    
+    width: 100%;
     overflow-x: auto;
     white-space: nowrap;
   }
@@ -27,6 +45,9 @@
   .tabs__articles{
     width: 100%;
   }
+
+  /* hero bot */
+
   /*---- Footer ----*/
   /* Section one */
 
@@ -35,12 +56,26 @@
 
 /* Tablet */
 @media screen and (max-width: 768px) {
+  /* global --> non toccare */
+  .hero__button{
+    padding: 0.6rem  1.2rem;
+  }
   /*---- Header ----*/
   /*nav1 */
 
   /* nav2*/
 
   /*---- Main ----*/
+  /* hero top */
+  .hero{
+    height: 15rem;
+  }
+  .hero__icon{
+    width: 70%;
+  }
+  .hero__content{
+    margin-left: 3.0rem;
+  }
   /* Giochi in Evidenza */
   .div_format_giochi_evidenza {
     width: 100%;
@@ -49,9 +84,13 @@
     width: 40%;
   }
   /* Ultime Novità */
+  .tabs__links{
+    justify-content: unset;
+  }
   .tabs__cards{
     width: 40%;
   }
+
   /*---- Footer ----*/
   /* Section one */
 
@@ -66,6 +105,33 @@
   /* nav2*/
 
   /*---- Main ----*/
+  /* hero top */
+  .hero{
+    flex-wrap: wrap;
+    background: url(../assest/images/media/hero__img_media.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30rem;
+    justify-content: end;
+  }
+  .hero__img{
+   display: none;
+  }
+  .hero__icon{
+    width: 90%;
+  }
+  .hero__content{
+    width: 100%;
+    position: relative;
+    margin: 15rem auto 0;
+    padding: 1rem 2.5rem;
+  }
+  .hero__texts{
+    line-height: 1.4rem;
+  }
+  .hero__button{
+    width: 90%;
+  }
   /* Giochi in Evidenza */
   .div_one_game{
     width: 90%;
@@ -73,6 +139,8 @@
   /* Ultime Novità */
   .tabs__cards{
     width: 90%;
+    font-size: 0.7rem;
+    text-align: center;
   }
   .tabs__cards img{
     display: none;
