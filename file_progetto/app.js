@@ -1,9 +1,49 @@
+// Footer
+
 const buttonEconomy = document.querySelectorAll(".button_economy");
 const ulRegione = document.querySelector(".ul_regione");
 const ul_regioni = document.querySelector(".ul_lingua");
 const arrayLiRegione = ulRegione.children;
-console.log(buttonEconomy);
-console.log(ulRegione);
+
+// Header
+const buttonMenuKebab = document.querySelector(".button__menù-kebab");
+const asideContainer = document.querySelector(".aside__container");
+const asideButtonX = document.querySelector(".aside__button-x");
+const navSingleButton = document.querySelectorAll(".nav__single__button");
+const nav1Container = document.querySelectorAll(".nav1__container");
+const nav1XButton = document.querySelectorAll(".nav1__x__button");
+
+// Kebab menu
+buttonMenuKebab.addEventListener("click", () => {
+  asideContainer.classList.add("ul_show");
+});
+asideButtonX.addEventListener("click", () => {
+  asideContainer.classList.remove("ul_show");
+});
+
+// Bottoni Navbar 1
+
+for (let i = 0; i < navSingleButton.length; i++) {
+  if (i === 0) {
+    navSingleButton[i].addEventListener("click", () => {
+      nav1Container[i].classList.toggle("ul_show");
+      nav1Container[1].classList.remove("ul_show");
+    });
+  } else if (i === 1) {
+    navSingleButton[i].addEventListener("click", () => {
+      nav1Container[i].classList.toggle("ul_show");
+      nav1Container[0].classList.remove("ul_show");
+    });
+  }
+}
+nav1XButton.forEach((elem) => {
+  elem.addEventListener("click", () => {
+    nav1Container[0].classList.remove("ul_show");
+    nav1Container[1].classList.remove("ul_show");
+  });
+});
+
+// Footer
 
 function addCheck() {
   // for (let i = 0; i < arrayLiRegione.length; i++) {
@@ -25,7 +65,7 @@ buttonEconomy[1].addEventListener("click", () => {
 
 localStorage.setItem(
   "check-dropbox",
-  '<img src="./assest/icons/Icona conferma ul.svg" class="ceck">'
+  '<img src="./assets/icons/footer/Icona conferma ul.svg" alt="" class="check">'
 );
 for (let i = 0; i < arrayLiRegione.length; i++) {
   arrayLiRegione[i].addEventListener("click", () => {
