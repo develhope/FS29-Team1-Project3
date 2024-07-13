@@ -82,3 +82,34 @@ ulRegione.addEventListener(
 buttonEconomy[1].addEventListener("blur", () => {
   ul_regioni.classList.remove("ul_show");
 });
+
+/*  -----------------------------------------------------------------------------------------------
+  Tabs
+--------------------------------------------------------------------------------------------------- */
+
+const tabsCardsImg = document.querySelectorAll(".tabs__cards > img");
+const tabsBtn = document.querySelectorAll(".tabs__btn");
+const textRed = document.querySelectorAll(".text-red");
+
+/* ----  Immagini Randomiche per ogni cards ----*/
+async function getImg(element) {
+  const imgResponse = await fetch("https://api.thecatapi.com/v1/images/search");
+  const imgPexel = await imgResponse.json();
+  element.src = imgPexel[0].url;
+}
+
+tabsCardsImg.forEach((element) => {
+  getImg(element);
+});
+
+/* ---- Click On tabs button ---*/
+tabsBtn.forEach((button) => {
+  button.addEventListener("click", () => {
+    tabsCardsImg.forEach((element) => {
+      getImg(element);
+      textRed.forEach((title) => {
+        title.innerText = button.innerText;
+      });
+    });
+  });
+});
