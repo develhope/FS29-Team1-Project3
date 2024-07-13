@@ -158,8 +158,125 @@
 
   /*---- Footer ----*/
   /* Section one */
-
+  .section_one {
+  }
+  .section_one_container {
+    width: 100%;
+  }
+  .div_p {
+    text-wrap: wrap;
+    margin: 3rem 3rem 1rem 3.7rem;
+    padding: 0 0rem 0.8rem;
+    width: 88%;
+    height: 50%;
+    font-size: 0.8rem;
+  }
+  .second_row {
+    width: 100%;
+    flex-direction: column;
+    margin: 0 0 0 3.2rem;
+  }
+  .ul_items {
+    width: 100%;
+    height: 50%;
+  }
+  .ul_items li {
+    width: 25%;
+    height: 10%;
+  }
+  .conversation {
+    margin: 0;
+  }
+  .speak {
+    text-align: left;
+  }
+  .social {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 0.8rem;
+  }
+  .ul_items li a:hover {
+    color: red;
+  }
+  .social li img:hover {
+    width: 2rem;
+    height: 2rem;
+  }
   /* snd */
+  .snd {
+    margin-left: 2rem;
+    display: flex;
+    flex-direction: column;
+
+    /* height: 100%; */
+  }
+  .simbol {
+    width: 20%;
+    height: 20%;
+  }
+  .simbol img {
+    width: 34%;
+    height: 34%;
+    padding-left: 2rem;
+  }
+  .selection_accordi {
+  }
+  .selection_group {
+    flex-direction: column;
+  }
+  .selezione {
+    width: 100%;
+    height: 20%;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+  }
+  .selezione li {
+    width: 20%;
+  }
+  .selezione li:nth-child(2) {
+    width: 15%;
+  }
+  .selezione li:nth-child(3) {
+    width: 15%;
+  }
+  .selezione li:nth-child(4) {
+    width: 15%;
+  }
+  .selezione li:nth-child(6) {
+    width: 20%;
+   }
+  .economy {
+    width: 100%;
+    height: 40%;
+    margin-top: 1rem;
+  }
+  .prezzi {
+    margin: 0 auto;
+    justify-content: center;
+  }
+  .accordi_trust {
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .accordi {
+    width: 100%;
+  }
+  .ul_accordi {
+    width: 100%;
+  }
+  .ul_accordi li {
+    width: 40%;
+    margin: 0.2rem 0.8rem;
+  }
+  .ul_accordi li a {
+    font-size: 0.9rem;
+  }
+  .trust {
+    justify-content: left;
+    margin: 1rem 0.8rem;
+  }
 }
 
 /* Telefono cellulare medio */
@@ -219,7 +336,43 @@
   }
   /*---- Footer ----*/
   /* Section one */
-
+   .section_one_container {
+    width: 100%;
+   } 
+   .div_p  {
+    margin: 0;
+    padding: 0;
+   }
+   .second_row {
+    margin: 0;
+    padding: 0;
+   }
+   .ul_accordi li {
+    
+    width: 40%;
+    
+  }
+  .ul_accordi li a {
+    
+    white-space: wrap;
+   }
+   .economy {
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+   }
+   .selezione {
+    width: 100%;
+    /* controllo francesco */
+    border: 1px solid red;
+   }
+   .selezione li {
+   
+    
+   }
+   .selezione li a {
+   
+   }
   /* snd */
 }
 
