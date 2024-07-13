@@ -464,6 +464,7 @@
 }
 .div_one_game {
   width: 30%;
+  max-width: 350px;
   aspect-ratio: 1/1;
   display: flex;
 }
@@ -617,7 +618,8 @@
 }
 
 .tabs__cards {
-  width: 31%;
+  width: 30%;
+  max-width: 350px;
   text-align: left;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.244);
   background-color: #f1f1f1;
