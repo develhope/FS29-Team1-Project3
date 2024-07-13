@@ -2,12 +2,12 @@
 
 /* Laptop grande */
 @media screen and (max-width: 1024px) {
-  /* Global --> non toccare */ 
+  /* Global --> non toccare */
   .fz-3 {
     font-size: 0.8rem;
   }
-  .hero__button{
-    padding: 0.8rem  1.4rem;
+  .hero__button {
+    padding: 0.8rem 1.4rem;
   }
   /*---- Header ----*/
   /*nav1 */
@@ -16,22 +16,22 @@
 
   /*---- Main ----*/
   /* Hero top */
-  .hero{
+  .hero {
     height: 18rem;
   }
-  .hero__icon{
+  .hero__icon {
     width: 90%;
   }
-  .hero_icon_container{
+  .hero_icon_container {
     text-align: center;
   }
-  
+
   /* Giochi in Evidenza */
   .div_format_giochi_evidenza {
     width: 100%;
   }
   /* Ultime Novità */
-  .tabs__links{    
+  .tabs__links {
     width: 100%;
     overflow-x: auto;
     white-space: nowrap;
@@ -40,9 +40,9 @@
     width: auto;
     text-align: center;
     padding: 0.5rem 1rem;
-    white-space: nowrap; 
+    white-space: nowrap;
   }
-  .tabs__articles{
+  .tabs__articles {
     width: 100%;
   }
 
@@ -52,8 +52,6 @@
   /* Section one */
   .section_one_container {
     width: 90%;
-    
-
   }
   .ul_items {
     flex-wrap: wrap;
@@ -61,12 +59,9 @@
   .ul_items li {
     width: 21%;
     padding: 0.5rem 0;
-
-    
   }
   .ul_items li a {
     font-size: 0.8rem;
-    
   }
   /* snd */
   .snd {
@@ -87,19 +82,18 @@
     /* padding-top: 1rem; */
     height: 60%;
     height: 90%;
-   
   }
   .selezione li {
-   /* height: 70%;  */
-   padding: 0;
-   margin: 1rem 0 0 1rem;
-  
-   width: 45%;
-  
-   /* margin: 1rem 0 0 1rem; */
+    /* height: 70%;  */
+    padding: 0;
+    margin: 1rem 0 0 1rem;
+
+    width: 45%;
+
+    /* margin: 1rem 0 0 1rem; */
   }
   .selezione li a {
-    font-size: 0.9rem;;
+    font-size: 0.9rem;
   }
   .selezione li:nth-child(3) {
     width: 12rem;
@@ -121,37 +115,44 @@
 /* Tablet */
 @media screen and (max-width: 768px) {
   /* global --> non toccare */
-  .hero__button{
-    padding: 0.6rem  1.2rem;
+  .hero__button {
+    padding: 0.6rem 1.2rem;
   }
   /*---- Header ----*/
   /*nav1 */
 
   /* nav2*/
-
+  .navcircle {
+    border-radius: 18%;
+    width: 1.5rem;
+    height: 0.15rem;
+  }
+  .nav2__box {
+    display: none;
+  }
   /*---- Main ----*/
   /* hero top */
-  .hero{
+  .hero {
     height: 15rem;
   }
-  .hero__icon{
+  .hero__icon {
     width: 70%;
   }
-  .hero__content{
-    margin-left: 3.0rem;
+  .hero__content {
+    margin-left: 3rem;
   }
   /* Giochi in Evidenza */
   .div_format_giochi_evidenza {
     width: 100%;
   }
-  .div_one_game{
+  .div_one_game {
     width: 40%;
   }
   /* Ultime Novità */
-  .tabs__links{
+  .tabs__links {
     justify-content: unset;
   }
-  .tabs__cards{
+  .tabs__cards {
     width: 40%;
   }
 
@@ -165,12 +166,19 @@
 @media screen and (max-width: 426px) {
   /*---- Header ----*/
   /*nav1 */
-
+  .nav1__account-button__content {
+    margin: 8.64rem 4rem;
+    align-items: start;
+    flex-flow: column;
+  }
+  .nav1__account-button__content a {
+    flex-flow: row;
+  }
   /* nav2*/
 
   /*---- Main ----*/
   /* hero top */
-  .hero{
+  .hero {
     flex-wrap: wrap;
     background: url(../assest/images/media/hero__img_media.jpg);
     background-repeat: no-repeat;
@@ -178,35 +186,35 @@
     height: 30rem;
     justify-content: end;
   }
-  .hero__img{
-   display: none;
+  .hero__img {
+    display: none;
   }
-  .hero__icon{
+  .hero__icon {
     width: 90%;
   }
-  .hero__content{
+  .hero__content {
     width: 100%;
     position: relative;
     margin: 15rem auto 0;
     padding: 1rem 2.5rem;
   }
-  .hero__texts{
+  .hero__texts {
     line-height: 1.4rem;
   }
-  .hero__button{
+  .hero__button {
     width: 90%;
   }
   /* Giochi in Evidenza */
-  .div_one_game{
+  .div_one_game {
     width: 90%;
   }
   /* Ultime Novità */
-  .tabs__cards{
+  .tabs__cards {
     width: 90%;
     font-size: 0.7rem;
     text-align: center;
   }
-  .tabs__cards img{
+  .tabs__cards img {
     display: none;
   }
   /*---- Footer ----*/
