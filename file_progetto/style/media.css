@@ -50,19 +50,17 @@
 
   /*---- Footer ----*/
   /* Section one */
-  .section_one_container {
-    width: 90%;
-  }
+
   .ul_items {
+    margin: 1rem 0 1rem;
     flex-wrap: wrap;
+    gap: 2rem;
   }
-  .ul_items li {
-    /* width: 21%; */
-    padding: 0.5rem 0;
-  }
+
   .ul_items li a {
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
+
   /* snd */
   .snd {
     width: 90%;
@@ -84,28 +82,12 @@
     height: 90%;
   }
   .selezione li {
-    /* height: 70%;  */
     padding: 0;
     margin: 1rem 0 0 1rem;
-
-    width: 45%;
-
-    /* margin: 1rem 0 0 1rem; */
+    width: initial;
   }
   .selezione li a {
     font-size: 0.9rem;
-  }
-  .selezione li:nth-child(3) {
-    width: 12rem;
-  }
-  .selezione li:nth-child(5) {
-    width: 10rem;
-  }
-  .selezione li:nth-child(6) {
-    width: 8rem;
-  }
-  .selezione li:nth-child(7) {
-    width: 5rem;
   }
   .economy {
     width: 50%;
@@ -175,7 +157,7 @@
     flex-direction: column;
   }
   .conversation {
-    margin: 0;
+    margin: 2rem 0 0;
   }
   .speak {
     text-align: left;
@@ -188,8 +170,6 @@
   }
   .ul_items {
     width: auto;
-  }
-  .ul_items li {
   }
   .ul_items li a:hover {
     color: red;
@@ -204,45 +184,33 @@
     display: flex;
     flex-direction: column;
   }
-
-  .simbol a,
-  .simbol img {
+  .simbol {
     padding: 0;
-    width: 100%;
   }
-  .simbol img {
-    width: 34%;
-    height: 34%;
-    padding-left: 2rem;
+  .simbol a {
+    padding: 0;
   }
-  .selection_accordi {
+  .simbol a img {
+    padding: 0;
+    width: 3.5rem;
   }
   .selection_group {
     flex-direction: column;
   }
   .selezione {
-    width: auto;
+    width: 100%;
     flex-wrap: wrap;
-    gap: 0.5rem;
-    margin: 2rem auto;
-    padding: 0;
+    gap: 1rem;
   }
   .selezione li {
-    width: 20%;
+    /* width: 17%; */
     margin: 0;
   }
-  /* .selezione li:nth-child(2) {
-    width: 15%;
+  .selezione li a {
+    margin: 0;
+    padding: 0;
+    width: auto;
   }
-  .selezione li:nth-child(3) {
-    width: 15%;
-  }
-  .selezione li:nth-child(4) {
-    width: 15%;
-  }
-  .selezione li:nth-child(6) {
-    width: 20%;
-  } */
   .economy {
     width: 100%;
     height: 40%;
