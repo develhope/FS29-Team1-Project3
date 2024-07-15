@@ -143,3 +143,7 @@ a {
 .pb-4 {
   padding-bottom: 2.5rem;
 }
+
+.df {
+  display: flex;
+}
