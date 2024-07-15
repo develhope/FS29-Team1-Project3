@@ -401,14 +401,24 @@
 }
 
 /* Hero Bottom */
+.hero__bottom{
+  width: 100%;
+  height: 27rem;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  position: relative;
+}
 
 .hero__content_bottom {
   margin: 0 auto;
-  z-index: 99;
+  z-index: 1;
   max-width: 1440px;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: left;
+  align-items:start;
+  padding: 1rem;
 }
 .hero__texts_bottom {
   width: 50%;
@@ -431,10 +441,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 0;
 }
 .bar__content h2 {
-  width: 40%;
+  width: 50%;
 }
 
 /* Style Giochi in Evidenza */
@@ -676,23 +685,22 @@
 }
 
 .second_row {
-  margin: 3% auto;
+  margin: 3% 0;
   width: 100%;
   display: flex;
+  justify-content: space-between;
 }
 .ul_items {
   margin: 1rem 0 1rem 0;
   border: none;
   padding: 0;
-  width: 70%;
+  /* width: 70%; */
   height: 100%;
   display: flex;
+  gap: 1rem;
 }
 .ul_items li {
-  margin: 0;
   border: none;
-  width: 20%;
-  height: 30%;
 }
 .ul_items li a {
   color: rgb(0, 0, 0);
@@ -790,10 +798,10 @@
   background-color: rgb(255, 255, 255);
 }
 .selezione li {
-  margin: 0 0.2rem 1.7rem;
+  margin: 0 0rem 1.7rem;
   padding: 0;
-  width: 30%;
-  height: 40%;
+  /* width: 30%;
+  height: 40%; */
   background-color: rgb(255, 255, 255);
 }
 .selezione li a {

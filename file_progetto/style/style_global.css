@@ -189,3 +189,11 @@ a {
 .df {
   display: flex;
 }
+
+
+@media (max-width: 426px) {
+  .general__button {
+    width: 80vw;
+    margin: 2rem auto;
+  }
+}
