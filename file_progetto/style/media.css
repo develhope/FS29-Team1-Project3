@@ -104,10 +104,12 @@
   /*nav1 */
 
   /* nav2*/
-  .navcircle {
-    border-radius: 18%;
-    width: 1.5rem;
-    height: 0.15rem;
+
+  .button__menù-hamburger {
+    display: flex;
+  }
+  .button__menù-kebab {
+    display: none;
   }
   .nav2__box {
     display: none;
