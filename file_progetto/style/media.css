@@ -1,0 +1,403 @@
+/* Media da compilare */
+
+/* Laptop grande */
+@media screen and (max-width: 1024px) {
+  /* Global --> non toccare */
+  .fz-3 {
+    font-size: 0.8rem;
+  }
+  .hero__button {
+    padding: 0.8rem 1.4rem;
+  }
+  /*---- Header ----*/
+  /*nav1 */
+
+  /* nav2*/
+
+  /*---- Main ----*/
+  /* Hero top */
+  .hero {
+    height: 18rem;
+  }
+  .hero__icon {
+    width: 90%;
+  }
+  .hero_icon_container {
+    text-align: center;
+  }
+
+  /* Giochi in Evidenza */
+  .div_format_giochi_evidenza {
+    width: 100%;
+  }
+  /* Ultime Novità */
+  .tabs__links {
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  .tabs__btn {
+    width: auto;
+    text-align: center;
+    padding: 0.5rem 1rem;
+    white-space: nowrap;
+  }
+  .tabs__articles {
+    width: 100%;
+  }
+
+  /* hero bot */
+
+  /*---- Footer ----*/
+  /* Section one */
+
+  .ul_items {
+    margin: 1rem 0 1rem;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+
+  .ul_items li a {
+    font-size: 1rem;
+  }
+
+  /* snd */
+  .snd {
+    width: 90%;
+  }
+  .ul_accordi {
+    width: 90%;
+  }
+  .ul_accordi li {
+    width: 49%;
+  }
+  .selection_group {
+    width: 100%;
+  }
+  .selezione {
+    flex-wrap: wrap;
+    width: 50%;
+    /* padding-top: 1rem; */
+    height: 60%;
+    height: 90%;
+  }
+  .selezione li {
+    padding: 0;
+    margin: 1rem 0 0 1rem;
+    width: initial;
+  }
+  .selezione li a {
+    font-size: 0.9rem;
+  }
+  .economy {
+    width: 50%;
+  }
+}
+
+/* Tablet */
+@media screen and (max-width: 768px) {
+  /* global --> non toccare */
+  .hero__button {
+    padding: 0.6rem 1.2rem;
+  }
+  /*---- Header ----*/
+  /*nav1 */
+
+  /* nav2*/
+  .navcircle {
+    border-radius: 18%;
+    width: 1.5rem;
+    height: 0.15rem;
+  }
+  .nav2__box {
+    display: none;
+  }
+  /*---- Main ----*/
+  /* hero top */
+  .hero {
+    height: 15rem;
+  }
+  .hero__icon {
+    width: 70%;
+  }
+  .hero__content {
+    margin-left: 3rem;
+  }
+  .hero__texts {
+    line-height: 1.3rem;
+  }
+  /* Giochi in Evidenza */
+  .div_format_giochi_evidenza {
+    width: 100%;
+  }
+  .div_one_game {
+    width: 40%;
+  }
+  /* Ultime Novità */
+  .tabs__links {
+    justify-content: unset;
+  }
+  .tabs__cards {
+    width: 40%;
+  }
+
+  /*---- Footer ----*/
+  /* Section one */
+
+  .section_one_container {
+    margin: 0 auto;
+  }
+  .div_p {
+    text-wrap: wrap;
+    padding: 0 0rem 1rem;
+    font-size: 0.8rem;
+  }
+  .second_row {
+    margin: 0 auto;
+    flex-direction: column;
+  }
+  .conversation {
+    margin: 2rem 0 0;
+  }
+  .speak {
+    text-align: left;
+  }
+  .social {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 0.8rem;
+  }
+  .ul_items {
+    width: auto;
+  }
+  .ul_items li a:hover {
+    color: red;
+  }
+  .social li img:hover {
+    width: 2rem;
+    height: 2rem;
+  }
+  /* snd */
+  .snd {
+    margin-left: 2rem auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .simbol {
+    padding: 0;
+  }
+  .simbol a {
+    padding: 0;
+  }
+  .simbol a img {
+    padding: 0;
+    width: 3.5rem;
+  }
+  .selection_group {
+    flex-direction: column;
+  }
+  .selezione {
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  .selezione li {
+    /* width: 17%; */
+    margin: 0;
+  }
+  .selezione li a {
+    margin: 0;
+    padding: 0;
+    width: auto;
+  }
+  .economy {
+    width: 100%;
+    height: 40%;
+    margin-top: 1rem;
+  }
+  .prezzi {
+    margin: 0 auto;
+    justify-content: center;
+  }
+  .accordi_trust {
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .accordi {
+    width: 100%;
+  }
+  .ul_accordi {
+    width: 100%;
+  }
+  .ul_accordi li {
+    width: 40%;
+    margin: 0.2rem 0.8rem;
+  }
+  .ul_accordi li a {
+    font-size: 0.9rem;
+  }
+  .trust {
+    justify-content: left;
+    margin: 1rem 0.8rem;
+  }
+}
+
+/* Telefono cellulare medio */
+@media screen and (max-width: 426px) {
+  /*---- Header ----*/
+  /*nav1 */
+  .nav1__account-button__content {
+    margin: 8.64rem 4rem;
+    align-items: start;
+    flex-flow: column;
+  }
+  .nav1__account-button__content a {
+    flex-flow: row;
+  }
+  /* nav2*/
+
+  /*---- Main ----*/
+  /* hero top */
+  .hero {
+    flex-wrap: wrap;
+    background: url(../assets/images/media/hero__img_media.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30rem;
+    justify-content: end;
+  }
+  .hero__img {
+    display: none;
+  }
+  .hero__icon {
+    width: 90%;
+  }
+  .hero__content {
+    width: 100%;
+    position: relative;
+    margin: 15rem auto 0;
+    padding: 1rem 2.5rem;
+  }
+  .hero__texts {
+    line-height: 1.4rem;
+  }
+  .hero__button {
+    width: 90%;
+  }
+  /* Giochi in Evidenza */
+  .div_one_game {
+    width: 90%;
+  }
+  /* Ultime Novità */
+  .tabs__cards {
+    width: 90%;
+    font-size: 0.7rem;
+    text-align: center;
+  }
+  .tabs__cards img {
+    display: none;
+  }
+  /*---- Footer ----*/
+  /* Section one */
+  .section_one_container {
+    width: 100%;
+  }
+  .div_p {
+    margin: 0;
+    padding: 0;
+  }
+  .second_row {
+    margin: 0;
+    padding: 0;
+  }
+  .ul_accordi li {
+    width: 40%;
+  }
+  .ul_accordi li a {
+    white-space: wrap;
+  }
+  .economy {
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  .selezione {
+    width: 100%;
+    /* controllo francesco */
+    border: 1px solid red;
+  }
+  .selezione li {
+  }
+  .selezione li a {
+  }
+  /* snd */
+}
+
+/* Telefono cellurare piccolo */
+@media screen and (max-width: 320px) {
+  /*---- Header ----*/
+  /*nav1 */
+
+  /* nav2*/
+
+  /*---- Main ----*/
+  /* Giochi in Evidenza */
+
+  /* Ultime Novità */
+
+  /*---- Footer ----*/
+  /* Section one */
+  .section_one_container {
+    padding: 1rem;
+    width: auto;
+  }
+  .div_p {
+    padding-bottom: 2rem;
+  }
+  .second_row {
+    width: auto;
+  }
+  .ul_items {
+    flex-flow: column;
+    text-wrap: nowrap;
+  }
+  .ul_items li {
+    width: auto;
+  }
+  .ul_items li:nth-child(5) {
+    padding-bottom: 2rem;
+    border-bottom: 1px solid gray;
+    width: 90%;
+  }
+  .talking {
+    text-wrap: nowrap;
+    font-size: 0.7rem;
+  }
+  .social img,
+  .social li,
+  .social a {
+    width: 2rem;
+  }
+  /* snd */
+  .snd {
+    margin: 3rem auto;
+  }
+
+  .simbol a,
+  .simbol img {
+    padding: 0;
+    width: 100%;
+  }
+  .selezione {
+    width: 100%;
+  }
+  .selezione li {
+    margin: 0;
+    width: 50%;
+  }
+  .selezione a {
+    width: 49%;
+    text-wrap: wrap;
+  }
+}

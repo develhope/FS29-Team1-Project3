@@ -40,17 +40,58 @@ a {
 /* background color */
 
 .bgc {
-  color: #eaeaea;
+  background-color: #f3f3f3;
 }
 
 /* Stile Bottone */
-
+/* generale */
 .general__button {
-  text-decoration: none;
-  padding: 20px;
-  background-color: rgba(240, 248, 255, 0);
+  position: relative;
+  padding: 1.1rem 1.7rem;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+.general__button::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border: 2px solid black;
   border-radius: 2px;
-  border: 1px solid black;
+  content: "";
+  z-index: 0;
+  transition: all 0.2s;
+}
+.general__button:hover::after {
+  scale: 1.07;
+}
+/* Hero */
+.hero__button {
+  position: relative;
+  padding: 1.1rem 1.7rem;
+  border: none;
+  background: none;
+  outline: none;
+  color: #eaeaea;
+}
+
+.hero__button::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border: 2px solid #eaeaea;
+  border-radius: 2px;
+  content: "";
+  z-index: -1;
+  transition: all 0.2s;
+}
+.hero__button:hover::after {
+  scale: 1.07;
 }
 
 /*stile testi e font size */
@@ -144,6 +185,7 @@ a {
   padding-bottom: 2.5rem;
 }
 
+/* Display flex */
 .df {
   display: flex;
 }
