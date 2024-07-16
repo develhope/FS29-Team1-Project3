@@ -401,14 +401,24 @@
 }
 
 /* Hero Bottom */
+.hero__bottom{
+  width: 100%;
+  height: 27rem;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  position: relative;
+}
 
 .hero__content_bottom {
   margin: 0 auto;
-  z-index: 99;
+  z-index: 1;
   max-width: 1440px;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: left;
+  align-items:start;
+  padding: 1rem;
 }
 .hero__texts_bottom {
   width: 50%;
@@ -431,10 +441,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 0;
 }
 .bar__content h2 {
-  width: 40%;
+  width: 50%;
 }
 
 /* Style Giochi in Evidenza */
@@ -617,7 +626,7 @@
 }
 
 .tabs__cards {
-  width: 31%;
+  width: 30%;
   text-align: left;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.244);
   background-color: #f1f1f1;

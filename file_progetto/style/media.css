@@ -13,7 +13,14 @@
   /*nav1 */
 
   /* nav2*/
-
+  .navcircle {
+    border-radius: 18%;
+    width: 1.5rem;
+    height: 0.15rem;
+  }
+  .nav2__box {
+    display: none;
+  }
   /*---- Main ----*/
   /* Hero top */
   .hero {
@@ -47,6 +54,17 @@
   }
 
   /* hero bot */
+
+
+  
+  .hero__bottom{
+    flex-wrap: wrap;
+    background: url(../assets/images/media/hero__bottom-1024.jpg);
+    background-repeat: no-repeat;
+    background-size:contain;
+    height: 24rem;
+    width: 100%;
+  }
 
   /*---- Footer ----*/
   /* Section one */
@@ -104,14 +122,7 @@
   /*nav1 */
 
   /* nav2*/
-  .navcircle {
-    border-radius: 18%;
-    width: 1.5rem;
-    height: 0.15rem;
-  }
-  .nav2__box {
-    display: none;
-  }
+
   /*---- Main ----*/
   /* hero top */
   .hero {
@@ -140,7 +151,18 @@
   .tabs__cards {
     width: 40%;
   }
-
+  /* hero bottom */
+  
+  .hero__texts_bottom{
+    line-height: normal;
+  }
+.bar__content{
+  flex-direction: column;
+  text-align: center;
+}
+.bar__content h2{
+  width: 100%;
+}
   /*---- Footer ----*/
   /* Section one */
 
@@ -283,7 +305,7 @@
     line-height: 1.4rem;
   }
   .hero__button {
-    width: 90%;
+    width: 100%;
   }
   /* Giochi in Evidenza */
   .div_one_game {
@@ -298,6 +320,35 @@
   .tabs__cards img {
     display: none;
   }
+  .cards__content{
+    display: flex;
+    flex-direction: column;
+  }
+  .cards__content p{
+    display: none;
+  }
+  /* Hero bottom */
+  .hero__bottom {
+    flex-wrap: wrap;
+    background: url(../assets/images/media/hero__bottom_tablet.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40rem;
+    align-items: end;
+    
+  }
+  .hero__content_bottom{
+    height: 50%;
+    display: flex;
+    padding-bottom: 5rem;
+  }
+  .hero__texts_bottom{
+    width: 100%;
+  }
+  .hero__button{
+    padding: 1rem 0;
+  }
+  
   /*---- Footer ----*/
   /* Section one */
   .section_one_container {
@@ -370,6 +421,8 @@
     border-bottom: 1px solid gray;
     width: 90%;
   }
+
+
   .talking {
     text-wrap: nowrap;
     font-size: 0.7rem;
