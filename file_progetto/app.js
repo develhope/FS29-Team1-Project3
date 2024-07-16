@@ -1,10 +1,3 @@
-// Footer
-
-const buttonEconomy = document.querySelectorAll(".button_economy");
-const ulRegione = document.querySelector(".ul_regione");
-const ul_regioni = document.querySelector(".ul_lingua");
-const arrayLiRegione = ulRegione.children;
-
 // Header
 const buttonMenuKebab = document.querySelector(".button__menù-kebab");
 const asideContainer = document.querySelector(".aside__container");
@@ -12,6 +5,12 @@ const asideButtonX = document.querySelector(".aside__button-x");
 const navSingleButton = document.querySelectorAll(".nav__single__button");
 const nav1Container = document.querySelectorAll(".nav1__container");
 const nav1XButton = document.querySelectorAll(".nav1__x__button");
+
+// Footer
+const buttonEconomy = document.querySelectorAll(".button_economy");
+const ulRegione = document.querySelector(".ul_regione");
+const ul_regioni = document.querySelector(".ul_lingua");
+const arrayLiRegione = ulRegione.children;
 
 // Kebab menu
 buttonMenuKebab.addEventListener("click", () => {
@@ -22,7 +21,6 @@ asideButtonX.addEventListener("click", () => {
 });
 
 // Bottoni Navbar 1
-
 for (let i = 0; i < navSingleButton.length; i++) {
   if (i === 0) {
     navSingleButton[i].addEventListener("click", () => {
@@ -44,7 +42,6 @@ nav1XButton.forEach((elem) => {
 });
 
 // Footer
-
 function addCheck() {
   // for (let i = 0; i < arrayLiRegione.length; i++) {
   //   if (arrayLiRegione[i].children.innerHTML === "Italy") {
@@ -53,16 +50,24 @@ function addCheck() {
   // }
   ulRegione.classList.toggle("ul_show");
   ul_regioni.classList.remove("ul_show");
-  ulRegione.setAttribute("autofocus", "");
+  ulRegione.focus();
 }
-buttonEconomy[0].addEventListener("click", () => {
-  ulRegione.addEventListener("focus", addCheck(), true);
-});
+buttonEconomy[0].addEventListener("click", addCheck());
 buttonEconomy[1].addEventListener("click", () => {
   ul_regioni.classList.toggle("ul_show");
   ulRegione.classList.remove("ul_show");
 });
 
+// Chiudere al click fuori da UlRegione
+ulRegione.addEventListener("blur", () => {
+  ulRegione.blur();
+  ulRegione.classList.remove("ul_show");
+});
+buttonEconomy[1].addEventListener("blur", () => {
+  ul_regioni.classList.remove("ul_show");
+});
+
+// Icona Spunta
 localStorage.setItem(
   "check-dropbox",
   '<img src="./assets/icons/footer/Icona conferma ul.svg" alt="" class="check">'
@@ -72,19 +77,10 @@ for (let i = 0; i < arrayLiRegione.length; i++) {
     arrayLiRegione[i].innerHTML += localStorage.getItem("check-dropbox");
   });
 }
-ulRegione.addEventListener(
-  "blur",
-  () => {
-    ulRegione.classList.remove("ul_show");
-  },
-  true
-);
-buttonEconomy[1].addEventListener("blur", () => {
-  ul_regioni.classList.remove("ul_show");
-});
 
 /*  -----------------------------------------------------------------------------------------------
-  Tabs
+  Main
+  Tabs  
 --------------------------------------------------------------------------------------------------- */
 
 const tabsCardsImg = document.querySelectorAll(".tabs__cards > img");
