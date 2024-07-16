@@ -1,23 +1,63 @@
 // Header
-const buttonMenuKebab = document.querySelector(".button__menù-kebab");
-const asideContainer = document.querySelector(".aside__container");
-const asideButtonX = document.querySelector(".aside__button-x");
+// Navbar 1
 const navSingleButton = document.querySelectorAll(".nav__single__button");
 const nav1Container = document.querySelectorAll(".nav1__container");
 const nav1XButton = document.querySelectorAll(".nav1__x__button");
-
-// Footer
-const buttonEconomy = document.querySelectorAll(".button_economy");
-const ulRegione = document.querySelector(".ul_regione");
-const ul_regioni = document.querySelector(".ul_lingua");
-const arrayLiRegione = ulRegione.children;
-
+// Aside
+const buttonMenuKebab = document.querySelector(".button__menù-kebab");
+const asideContainer = document.querySelector(".aside__container");
+const asideButtonX = document.querySelector(".aside__button-x");
+// Aside menu Media Query
+const buttonMenùHamburger = document.querySelector(".button__menù-hamburger");
+const asideMQ = document.querySelector(".aside__MQ");
+const asideInsideButtonGiochi = document.querySelectorAll(
+  ".aside__inside-button-giochi"
+);
+const asideInsideButtonItems = document.querySelectorAll(
+  ".aside__inside-button-items"
+);
+const asideButtonGiochi = document.querySelector(".aside__button-giochi");
+const asideMqX = document.querySelector(".aside__MQ__X ");
 // Kebab menu
 buttonMenuKebab.addEventListener("click", () => {
   asideContainer.classList.add("ul_show");
 });
 asideButtonX.addEventListener("click", () => {
   asideContainer.classList.remove("ul_show");
+});
+//Hamburger menù
+buttonMenùHamburger.addEventListener("click", () => {
+  asideMQ.classList.add("ul_show");
+});
+asideMqX.addEventListener("click", () => {
+  asideMQ.classList.remove("ul_show");
+});
+// Aside menu Media Query
+asideButtonGiochi.addEventListener("click", () => {
+  asideInsideButtonGiochi.forEach((element) => {
+    element.classList.toggle("ul_show");
+    element.addEventListener("click", () => {
+      const ul = element.children[1];
+
+      if (ul.style.display === "none") {
+        ul.style.display = "flex";
+      } else {
+        ul.style.display = "none";
+      }
+    });
+  });
+});
+
+asideInsideButtonItems.forEach((element) => {
+  element.addEventListener("click", () => {
+    const ul = element.children[1];
+
+    if (ul.style.display === "none") {
+      ul.style.display = "flex";
+    } else {
+      ul.style.display = "none";
+    }
+  });
 });
 
 // Bottoni Navbar 1

@@ -124,6 +124,15 @@
 
   /* nav2*/
 
+  .button__menù-hamburger {
+    display: flex;
+  }
+  .button__menù-kebab {
+    display: none;
+  }
+  .nav2__box {
+    display: none;
+  }
   /*---- Main ----*/
   /* hero top */
   .hero {
