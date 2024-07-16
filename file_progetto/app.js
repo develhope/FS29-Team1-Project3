@@ -2,7 +2,7 @@
 
 const buttonEconomy = document.querySelectorAll(".button_economy");
 const ulRegione = document.querySelector(".ul_regione");
-const ul_regioni = document.querySelector(".ul_lingua");
+const ulRegioni = document.querySelector(".ul_lingua");
 const arrayLiRegione = ulRegione.children;
 
 // Header
@@ -52,23 +52,26 @@ function addCheck() {
   //   }
   // }
   ulRegione.classList.toggle("ul_show");
-  ul_regioni.classList.remove("ul_show");
+  ulRegioni.classList.remove("ul_show");
   ulRegione.setAttribute("autofocus", "");
 }
+
 buttonEconomy[0].addEventListener("click", () => {
   ulRegione.addEventListener("focus", addCheck(), true);
 });
 buttonEconomy[1].addEventListener("click", () => {
-  ul_regioni.classList.toggle("ul_show");
+  ulRegioni.classList.toggle("ul_show");
   ulRegione.classList.remove("ul_show");
 });
 
 localStorage.setItem("check-dropbox", '<img src="./assets/icons/footer/Icona conferma ul.svg" alt="" class="check">');
 for (let i = 0; i < arrayLiRegione.length; i++) {
   arrayLiRegione[i].addEventListener("click", () => {
-    arrayLiRegione[i].innerHTML += localStorage.getItem("check-dropbox");
+    arrayLiRegione[i].children[0].innerHTML += localStorage.getItem("check-dropbox");
   });
+  console.log(arrayLiRegione);
 }
+
 ulRegione.addEventListener(
   "blur",
   () => {
@@ -77,7 +80,10 @@ ulRegione.addEventListener(
   true
 );
 buttonEconomy[1].addEventListener("blur", () => {
-  ul_regioni.classList.remove("ul_show");
+  ulRegioni.classList.remove("ul_show");
+});
+buttonEconomy[0].addEventListener("blur", () => {
+  ulRegione.classList.remove("ul_show");
 });
 
 /*  -----------------------------------------------------------------------------------------------
