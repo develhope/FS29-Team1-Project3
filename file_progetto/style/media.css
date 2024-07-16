@@ -1,0 +1,493 @@
+/* Media da compilare */
+
+/* Laptop grande */
+@media screen and (max-width: 1024px) {
+  /* Global --> non toccare */
+  .fz-3 {
+    font-size: 0.8rem;
+  }
+  .hero__button {
+    padding: 0.8rem 1.4rem;
+  }
+  /*---- Header ----*/
+  /*nav1 */
+
+  /* nav2*/
+  .navcircle {
+    border-radius: 18%;
+    width: 1.5rem;
+    height: 0.15rem;
+  }
+  .nav2__box {
+    display: none;
+  }
+  /*---- Main ----*/
+  /* Hero top */
+  .hero {
+    height: 18rem;
+  }
+  .hero__icon {
+    width: 90%;
+  }
+  .hero_icon_container {
+    text-align: center;
+  }
+
+  /* Giochi in Evidenza */
+  .div_format_giochi_evidenza {
+    width: 100%;
+  }
+  /* Ultime Novità */
+  .tabs__links {
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  .tabs__btn {
+    width: auto;
+    text-align: center;
+    padding: 0.5rem 1rem;
+    white-space: nowrap;
+  }
+  .tabs__articles {
+    width: 100%;
+  }
+
+  /* hero bot */
+
+  .hero__bottom {
+    flex-wrap: wrap;
+    background: url(../assets/images/media/hero__bottom-1024.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 24rem;
+    width: 100%;
+  }
+
+  /*---- Footer ----*/
+  /* Section one */
+
+  .ul_items {
+    margin: 1rem 0 1rem;
+    flex-wrap: wrap;
+    gap: 1rem 2rem;
+  }
+
+  .ul_items li a {
+    font-size: 0.9rem;
+  }
+
+  /* snd */
+  .snd {
+    width: 90%;
+    margin: 1rem auto;
+  }
+
+  .selection_group {
+    width: 100%;
+  }
+  .selezione {
+    flex-wrap: wrap;
+    width: 50%;
+    /* padding-top: 1rem; */
+
+    height: 90%;
+    gap: 0 6rem;
+  }
+  .selezione li {
+    padding: 0;
+    margin: 1rem 0 0 0;
+
+    width: auto;
+
+    /* margin: 1rem 0 0 1rem; */
+  }
+  .selezione li a {
+    font-size: 0.9rem;
+  }
+  .economy {
+    width: 50%;
+  }
+  .ul_accordi {
+    gap: 0.5rem 3rem;
+  }
+}
+
+/* Tablet */
+@media screen and (max-width: 768px) {
+  /* global --> non toccare */
+  .hero__button {
+    padding: 0.6rem 1.2rem;
+  }
+  /*---- Header ----*/
+  /*nav1 */
+
+  /* nav2*/
+
+  .button__menù-hamburger {
+    display: flex;
+  }
+  .button__menù-kebab {
+    display: none;
+  }
+  .nav2__box {
+    display: none;
+  }
+  /*---- Main ----*/
+  /* hero top */
+  .hero {
+    height: 15rem;
+  }
+  .hero__icon {
+    width: 70%;
+  }
+  .hero__content {
+    margin-left: 3rem;
+  }
+  .hero__texts {
+    line-height: 1.3rem;
+  }
+  /* Giochi in Evidenza */
+  .div_format_giochi_evidenza {
+    width: 100%;
+  }
+  .div_one_game {
+    width: 40%;
+  }
+  /* Ultime Novità */
+  .tabs__links {
+    justify-content: unset;
+  }
+  .tabs__cards {
+    width: 40%;
+  }
+  /* hero bottom */
+
+  .hero__texts_bottom {
+    line-height: normal;
+  }
+  .bar__content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .bar__content h2 {
+    width: 100%;
+  }
+  /*---- Footer ----*/
+  /* Section one */
+
+  .section_one_container {
+    margin: 0 auto;
+  }
+  .div_p {
+    text-wrap: wrap;
+    padding: 0 0rem 1rem;
+    font-size: 0.8rem;
+  }
+  .second_row {
+    margin: 0 auto;
+    flex-direction: column;
+  }
+  .conversation {
+    margin: 2rem 0 0;
+  }
+  .speak {
+    text-align: left;
+  }
+  .social {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 0.8rem;
+  }
+  .ul_items {
+    width: auto;
+  }
+  .ul_items li a:hover {
+    color: red;
+  }
+  .social li img:hover {
+    width: 2rem;
+    height: 2rem;
+  }
+  /* snd */
+  .snd {
+    margin: 1.8rem auto;
+    /* padding-left: 2rem; */
+    display: flex;
+    flex-direction: column;
+  }
+  .simbol {
+    padding: 0;
+    width: 100%;
+    width: 100%;
+  }
+  .simbol img {
+    width: 90%;
+    height: 90%;
+  }
+
+  .selection_group {
+    flex-direction: column;
+  }
+  .selezione {
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 0.5rem 2rem;
+    margin: 0.8rem 0;
+    padding: 0;
+  }
+  .selezione li {
+    width: auto;
+    margin: 0 0 0.7rem 0;
+  }
+  .economy {
+    width: 100%;
+    height: 40%;
+    margin: 0 auto;
+  }
+  .button_economy {
+    width: 95%;
+    height: 70%;
+  }
+  .prezzi {
+    justify-content: left;
+    margin: 0 auto;
+  }
+  .accordi_trust {
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .accordi {
+    width: 100%;
+  }
+  .ul_accordi {
+    width: 100%;
+    gap: 0 2rem;
+  }
+
+  .ul_accordi li a {
+    font-size: 0.9rem;
+  }
+
+  .trust {
+    justify-content: left;
+    margin: 1rem 0.8rem;
+  }
+}
+
+/* Telefono cellulare medio */
+@media screen and (max-width: 426px) {
+  /*---- Header ----*/
+  /*nav1 */
+  .nav1__account-button__content {
+    margin: 8.64rem 4rem;
+    align-items: start;
+    flex-flow: column;
+  }
+  .nav1__account-button__content a {
+    flex-flow: row;
+  }
+  /* nav2*/
+
+  /*---- Main ----*/
+  /* hero top */
+  .hero {
+    flex-wrap: wrap;
+    background: url(../assets/images/media/hero__img_media.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30rem;
+    justify-content: end;
+  }
+  .hero__img {
+    display: none;
+  }
+  .hero__icon {
+    width: 90%;
+  }
+  .hero__content {
+    width: 100%;
+    position: relative;
+    margin: 15rem auto 0;
+    padding: 1rem 2.5rem;
+  }
+  .hero__texts {
+    line-height: 1.4rem;
+  }
+  .hero__button {
+    width: 100%;
+  }
+  /* Giochi in Evidenza */
+  .div_one_game {
+    width: 90%;
+  }
+  /* Ultime Novità */
+  .tabs__cards {
+    width: 90%;
+    font-size: 0.7rem;
+    text-align: center;
+  }
+  .tabs__cards img {
+    display: none;
+  }
+  .cards__content {
+    display: flex;
+    flex-direction: column;
+  }
+  .cards__content p {
+    display: none;
+  }
+  /* Hero bottom */
+  .hero__bottom {
+    flex-wrap: wrap;
+    background: url(../assets/images/media/hero__bottom_tablet.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40rem;
+    align-items: end;
+  }
+  .hero__content_bottom {
+    height: 50%;
+    display: flex;
+    padding-bottom: 5rem;
+  }
+  .hero__texts_bottom {
+    width: 100%;
+  }
+  .hero__button {
+    padding: 1rem 0;
+  }
+
+  /*---- Footer ----*/
+  /* Section one */
+  .section_one_container {
+    width: 90%;
+    margin: 1rem auto;
+  }
+  .div_p {
+    margin: 0;
+    padding-bottom: 1rem;
+    font-size: 0.7rem;
+  }
+  .second_row {
+    margin: 0;
+    padding: 0;
+  }
+  .ul_items {
+    border-bottom: 1px solid gray;
+    padding-bottom: 1rem;
+  }
+  .talking {
+    text-wrap: nowrap;
+  }
+  /* snd */
+  .simbol img {
+    width: 3rem;
+  }
+  .selezione {
+    width: 100%;
+    gap: 0 3rem;
+  }
+  .selezione li {
+    width: auto;
+  }
+  .ul_accordi {
+    gap: 1rem 1rem;
+    margin-bottom: 2.5rem;
+  }
+  .ul_accordi li a {
+    white-space: wrap;
+  }
+  .economy {
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  .trust {
+    margin: 0;
+  }
+}
+
+/* Telefono cellurare piccolo */
+@media screen and (max-width: 320px) {
+  /*---- Header ----*/
+  /*nav1 */
+
+  /* nav2*/
+
+  /*---- Main ----*/
+  /* Giochi in Evidenza */
+
+  /* Ultime Novità */
+
+  /*---- Footer ----*/
+  /* Section one */
+  .section_one_container {
+    padding: 1rem;
+    width: auto;
+  }
+  .div_p {
+    padding-bottom: 2rem;
+  }
+  .second_row {
+    width: auto;
+  }
+  .ul_items {
+    flex-flow: column;
+    text-wrap: nowrap;
+  }
+  .ul_items li {
+    width: auto;
+  }
+
+  .talking {
+    text-wrap: nowrap;
+    font-size: 0.7rem;
+  }
+  .social img,
+  .social li,
+  .social a {
+    width: 2rem;
+  }
+  /* snd */
+  .snd {
+    margin: 3rem auto;
+  }
+
+  .simbol a,
+  .simbol img {
+    padding: 0;
+    width: 3rem;
+  }
+  .selezione {
+    width: 100%;
+    gap: 0.5rem 3rem;
+    margin-bottom: 2.5rem;
+  }
+  .selezione li {
+    margin: 0;
+    width: auto;
+  }
+  .selezione a {
+    width: 49%;
+    text-wrap: wrap;
+  }
+  .accordi {
+    margin-bottom: 1.6rem;
+  }
+  .ul_accordi {
+    margin-bottom: 0;
+  }
+  .ul_accordi li {
+    width: 100%;
+  }
+  .economy {
+    gap: 1rem;
+    margin-bottom: 1.4rem;
+  }
+  .trust {
+    margin: 0;
+    padding: 0;
+  }
+}
