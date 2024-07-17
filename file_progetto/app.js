@@ -18,6 +18,14 @@ const asideInsideButtonItems = document.querySelectorAll(
 );
 const asideButtonGiochi = document.querySelector(".aside__button-giochi");
 const asideMqX = document.querySelector(".aside__MQ__X ");
+
+// Footer
+
+const buttonEconomy = document.querySelectorAll(".button_economy");
+const ulRegione = document.querySelector(".ul_regione");
+const ul_regioni = document.querySelector(".ul_lingua");
+const arrayLiRegione = ulRegione.children;
+
 // Kebab menu
 buttonMenuKebab.addEventListener("click", () => {
   asideContainer.classList.add("ul_show");
@@ -81,6 +89,39 @@ nav1XButton.forEach((elem) => {
   });
 });
 
+/*  -----------------------------------------------------------------------------------------------
+  Main
+  Tabs  
+--------------------------------------------------------------------------------------------------- */
+
+const tabsCardsImg = document.querySelectorAll(".tabs__cards > img");
+const tabsBtn = document.querySelectorAll(".tabs__btn");
+const textRed = document.querySelectorAll(".text-red");
+
+/* ----  Immagini Randomiche per ogni cards ----*/
+async function getImg(element) {
+  const imgResponse = await fetch("https://api.thecatapi.com/v1/images/search");
+  const imgPexel = await imgResponse.json();
+  element.src = imgPexel[0].url;
+  console.log(imgPexel, "ciao");
+}
+
+tabsCardsImg.forEach((element) => {
+  getImg(element);
+});
+
+/* ---- Click On tabs button ---*/
+tabsBtn.forEach((button) => {
+  button.addEventListener("click", () => {
+    tabsCardsImg.forEach((element) => {
+      getImg(element);
+      textRed.forEach((title) => {
+        title.innerText = button.innerText;
+      });
+    });
+  });
+});
+
 // Footer
 function addCheck() {
   // for (let i = 0; i < arrayLiRegione.length; i++) {
@@ -117,35 +158,7 @@ for (let i = 0; i < arrayLiRegione.length; i++) {
     arrayLiRegione[i].innerHTML += localStorage.getItem("check-dropbox");
   });
 }
-
-/*  -----------------------------------------------------------------------------------------------
-  Main
-  Tabs  
---------------------------------------------------------------------------------------------------- */
-
-const tabsCardsImg = document.querySelectorAll(".tabs__cards > img");
-const tabsBtn = document.querySelectorAll(".tabs__btn");
-const textRed = document.querySelectorAll(".text-red");
-
-/* ----  Immagini Randomiche per ogni cards ----*/
-async function getImg(element) {
-  const imgResponse = await fetch("https://api.thecatapi.com/v1/images/search");
-  const imgPexel = await imgResponse.json();
-  element.src = imgPexel[0].url;
-}
-
-tabsCardsImg.forEach((element) => {
-  getImg(element);
-});
-
-/* ---- Click On tabs button ---*/
-tabsBtn.forEach((button) => {
-  button.addEventListener("click", () => {
-    tabsCardsImg.forEach((element) => {
-      getImg(element);
-      textRed.forEach((title) => {
-        title.innerText = button.innerText;
-      });
-    });
-  });
-});
+/*
+overlay 100vh
+scroll su aside
+*/

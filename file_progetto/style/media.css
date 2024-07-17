@@ -341,7 +341,7 @@
   /* Hero bottom */
   .hero__bottom {
     flex-wrap: wrap;
-    background: url(../assets/images/media/hero__bottom_tablet.jpg);
+    background: url("./assets/images/media/hero__bottom_tablet.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     height: 40rem;
