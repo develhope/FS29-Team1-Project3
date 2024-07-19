@@ -761,8 +761,7 @@
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.244);
   background-color: #f1f1f1;
   height: 100%;
-  height: 550px;
-  overflow: hidden;
+  max-height: fit-content;
 }
 
 .tabs__cards img {
