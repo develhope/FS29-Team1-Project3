@@ -188,12 +188,6 @@ a {
   padding-bottom: 2.5rem;
 }
 
-/* Display flex */
-.df {
-  display: flex;
-}
-
-
 @media (max-width: 426px) {
   .general__button {
     width: 80vw;
