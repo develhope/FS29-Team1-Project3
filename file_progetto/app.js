@@ -10,14 +10,17 @@ const asideButtonX = document.querySelector(".aside__button-x");
 // Aside menu Media Query
 const buttonMenùHamburger = document.querySelector(".button__menù-hamburger");
 const asideMQ = document.querySelector(".aside__MQ");
-const asideInsideButtonGiochi = document.querySelectorAll(
-  ".aside__inside-button-giochi"
-);
-const asideInsideButtonItems = document.querySelectorAll(
-  ".aside__inside-button-items"
-);
+const asideInsideButtonGiochi = document.querySelectorAll(".aside__inside-button-giochi");
+const asideInsideButtonItems = document.querySelectorAll(".aside__inside-button-items");
 const asideButtonGiochi = document.querySelector(".aside__button-giochi");
 const asideMqX = document.querySelector(".aside__MQ__X ");
+
+//footer
+const buttonEconomy = document.querySelectorAll(".button_economy");
+const ulRegione = document.querySelector(".ul_regione");
+const ulRegioni = document.querySelector(".ul_lingua");
+const arrayLiRegione = ulRegione.children;
+
 // Kebab menu
 buttonMenuKebab.addEventListener("click", () => {
   asideContainer.classList.add("ul_show");
@@ -81,43 +84,6 @@ nav1XButton.forEach((elem) => {
   });
 });
 
-// Footer
-function addCheck() {
-  // for (let i = 0; i < arrayLiRegione.length; i++) {
-  //   if (arrayLiRegione[i].children.innerHTML === "Italy") {
-  //     arrayLiRegione[i].innerHTML += localStorage.getItem("check-dropbox");
-  //   }
-  // }
-  ulRegione.classList.toggle("ul_show");
-  ul_regioni.classList.remove("ul_show");
-  ulRegione.focus();
-}
-buttonEconomy[0].addEventListener("click", addCheck());
-buttonEconomy[1].addEventListener("click", () => {
-  ul_regioni.classList.toggle("ul_show");
-  ulRegione.classList.remove("ul_show");
-});
-
-// Chiudere al click fuori da UlRegione
-ulRegione.addEventListener("blur", () => {
-  ulRegione.blur();
-  ulRegione.classList.remove("ul_show");
-});
-buttonEconomy[1].addEventListener("blur", () => {
-  ul_regioni.classList.remove("ul_show");
-});
-
-// Icona Spunta
-localStorage.setItem(
-  "check-dropbox",
-  '<img src="./assets/icons/footer/Icona conferma ul.svg" alt="" class="check">'
-);
-for (let i = 0; i < arrayLiRegione.length; i++) {
-  arrayLiRegione[i].addEventListener("click", () => {
-    arrayLiRegione[i].innerHTML += localStorage.getItem("check-dropbox");
-  });
-}
-
 /*  -----------------------------------------------------------------------------------------------
   Main
   Tabs  
@@ -149,3 +115,38 @@ tabsBtn.forEach((button) => {
     });
   });
 });
+
+// Footer
+function addCheck() {
+  // for (let i = 0; i < arrayLiRegione.length; i++) {
+  //   if (arrayLiRegione[i].children.innerHTML === "Italy") {
+  //     arrayLiRegione[i].innerHTML += localStorage.getItem("check-dropbox");
+  //   }
+  // }
+  ulRegione.classList.toggle("ul_show");
+  ulRegioni.classList.remove("ul_show");
+  ulRegione.focus();
+}
+buttonEconomy[0].addEventListener("click", addCheck());
+buttonEconomy[1].addEventListener("click", () => {
+  ulRegioni.classList.toggle("ul_show");
+  ulRegione.classList.remove("ul_show");
+});
+
+// Chiudere al click fuori da UlRegione
+ulRegione.addEventListener("blur", () => {
+  ulRegione.blur();
+  ulRegione.classList.remove("ul_show");
+});
+buttonEconomy[1].addEventListener("blur", () => {
+  ulRegioni.classList.remove("ul_show");
+});
+
+// Icona Spunta
+localStorage.setItem("check-dropbox", '<img src="./assets/icons/footer/Icona conferma ul.svg" alt="" class="check">');
+for (let i = 0; i < arrayLiRegione.length; i++) {
+  arrayLiRegione[i].addEventListener("click", () => {
+    arrayLiRegione[i].children[0].innerHTML += localStorage.getItem("check-dropbox");
+  });
+  console.log(arrayLiRegione);
+}
