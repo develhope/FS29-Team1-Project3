@@ -1,3 +1,5 @@
+/*------------- DICHIARAZIONI VARIABILI -----------------*/
+
 // Header
 // Navbar 1
 const navSingleButton = document.querySelectorAll(".nav__single__button");
@@ -26,13 +28,17 @@ const ulRegione = document.querySelector(".ul_regione");
 const ul_regioni = document.querySelector(".ul_lingua");
 const arrayLiRegione = ulRegione.children;
 
+/*--------------------- CODICE ---------------------------*/
+
 // Kebab menu
+
 buttonMenuKebab.addEventListener("click", () => {
   asideContainer.classList.add("ul_show");
 });
 asideButtonX.addEventListener("click", () => {
   asideContainer.classList.remove("ul_show");
 });
+
 //Hamburger menù
 buttonMenùHamburger.addEventListener("click", () => {
   asideMQ.classList.add("ul_show");
@@ -72,20 +78,20 @@ asideInsideButtonItems.forEach((element) => {
 for (let i = 0; i < navSingleButton.length; i++) {
   if (i === 0) {
     navSingleButton[i].addEventListener("click", () => {
-      nav1Container[i].classList.toggle("ul_show");
-      nav1Container[1].classList.remove("ul_show");
+      nav1Container[i].classList.add("df");
+      nav1Container[1].classList.remove("df");
     });
   } else if (i === 1) {
     navSingleButton[i].addEventListener("click", () => {
-      nav1Container[i].classList.toggle("ul_show");
-      nav1Container[0].classList.remove("ul_show");
+      nav1Container[i].classList.toggle("df");
+      nav1Container[0].classList.remove("df");
     });
   }
 }
 nav1XButton.forEach((elem) => {
   elem.addEventListener("click", () => {
-    nav1Container[0].classList.remove("ul_show");
-    nav1Container[1].classList.remove("ul_show");
+    nav1Container[0].classList.remove("df");
+    nav1Container[1].classList.remove("df");
   });
 });
 
@@ -103,7 +109,6 @@ async function getImg(element) {
   const imgResponse = await fetch("https://api.thecatapi.com/v1/images/search");
   const imgPexel = await imgResponse.json();
   element.src = imgPexel[0].url;
-  console.log(imgPexel, "ciao");
 }
 
 tabsCardsImg.forEach((element) => {
