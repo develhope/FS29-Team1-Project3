@@ -6,10 +6,13 @@ const html = document.querySelector("html");
 const navSingleButton = document.querySelectorAll(".nav__single__button");
 const nav1Container = document.querySelectorAll(".nav1__container");
 const nav1XButton = document.querySelectorAll(".nav1__x__button");
+
 // Aside
+const overlay = document.querySelector(".overlay");
 const buttonMenuKebab = document.querySelector(".button__menù-kebab");
 const asideContainer = document.querySelector(".aside__container");
 const asideButtonX = document.querySelector(".aside__button-x");
+
 // Aside menu Media Query
 const buttonMenùHamburger = document.querySelector(".button__menù-hamburger");
 const asideMQ = document.querySelector(".aside__MQ");
@@ -32,22 +35,45 @@ const arrayLiRegione = ulRegione.children;
 /*--------------------- CODICE ---------------------------*/
 
 // Header
-// Kebab menu
+// Nav2 sticky
 
+window.onscroll = function () {
+  if (window.pageYOffset >= sticky) {
+    nav2[0].classList.add("sticky");
+    nav1[0].classList.add("hidden");
+  } else {
+    nav2[0].classList.remove("sticky");
+    nav1[0].classList.remove("hidden");
+  }
+};
+
+// Dichiarazione variabili per Navbar 2 sticky
+const nav1 = document.getElementsByClassName("nav1");
+const nav2 = document.getElementsByClassName("nav2");
+const sticky = nav2[0].offsetTop;
+
+// Kebab menu
 buttonMenuKebab.addEventListener("click", () => {
   asideContainer.classList.add("df");
+  html.style.overflow = "hidden";
+  // overlay.style.display = "block";
 });
 asideButtonX.addEventListener("click", () => {
   asideContainer.classList.remove("df");
+  html.style.overflow = "scroll";
+  // overlay.style.display = "none";
 });
 
 //Hamburger menù
 buttonMenùHamburger.addEventListener("click", () => {
   asideMQ.classList.add("df");
+  html.style.overflow = "hidden";
 });
 asideMqX.addEventListener("click", () => {
   asideMQ.classList.remove("df");
+  html.style.overflow = "scroll";
 });
+
 // Aside menu Media Query
 asideButtonGiochi.addEventListener("click", () => {
   asideInsideButtonGiochi.forEach((element) => {
@@ -60,7 +86,6 @@ asideButtonGiochi.addEventListener("click", () => {
       } else {
         ul.style.display = "none";
       }
-      html.style.overflow = "hidden";
     });
   });
 });
@@ -71,10 +96,10 @@ asideInsideButtonItems.forEach((element) => {
 
     if (ul.style.display === "none") {
       ul.style.display = "flex";
-      html.style.overflow = "hidden";
+      // html.style.overflow = "hidden";
     } else {
       ul.style.display = "none";
-      html.style.overflow = "scroll";
+      // html.style.overflow = "scroll";
     }
   });
 });
@@ -146,19 +171,19 @@ tabsBtn.forEach((button) => {
 // Footer
 
 buttonEconomy[0].addEventListener("click", () => {
-  console.log(ulRegione);
   if (ulRegione.style.display === "none") {
     ulRegione.style.display = "flex";
+    ulRegioni.style.display = "none";
   } else {
     ulRegione.style.display = "none";
   }
 });
 buttonEconomy[1].addEventListener("click", () => {
-  console.log(ulRegione);
-  if (ulRegione.style.display === "none") {
-    ulRegione.style.display = "flex";
-  } else {
+  if (ulRegioni.style.display === "none") {
+    ulRegioni.style.display = "flex";
     ulRegione.style.display = "none";
+  } else {
+    ulRegioni.style.display = "none";
   }
 });
 

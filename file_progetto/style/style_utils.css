@@ -1,17 +1,27 @@
 /* Blocchi univoci */
 
 /* Navbar */
+
+/* Overlay */
+.overlay {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: 0.5;
+}
+
 /* Prima Nav */
 .nav1 {
-  /* position: sticky;
-  top: 0; */
-  /* z-index: 2000; */
   height: 2.3rem;
-  overflow: hidden;
+  position: relative;
+  transition: top 0.3s, opacity 0.3s;
   background-color: black;
 }
 .nav__buttons {
-  margin-top: 0.5rem;
+  /* margin-top: 0.5rem; */
+  margin-bottom: 0;
   margin-right: 2rem;
   display: flex;
   align-items: center;
@@ -20,6 +30,7 @@
   /* position: relative; */
 }
 .nav__single__button {
+  margin-top: 0.5rem;
   border: none;
   width: 2rem;
   height: 1.5rem;
@@ -163,6 +174,9 @@
   display: flex;
   align-items: center;
   gap: 1rem;
+  position: relative;
+  transition: top 0.3s;
+  background-color: white;
 }
 
 /* Aside */
@@ -180,6 +194,7 @@
   gap: 0.2rem;
   cursor: pointer;
   background: none;
+  transition: margin-left 0.5s;
 }
 .navcircle {
   border-radius: 50%;
@@ -403,7 +418,7 @@
 .nav2__list-menù__giochi {
   /* display: flex; */
   opacity: 0.9;
-  margin-top: 1rem;
+  margin-top: 3rem;
   gap: 2rem;
   background-color: white;
   border-radius: 0.2rem;
@@ -490,6 +505,20 @@
 .aside__inside-button-giochi ul li:hover,
 .aside__inside-button-items ul li:hover {
   color: red;
+}
+/* nav Sticky */
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.hidden {
+  opacity: 0;
+  pointer-events: none;
+  display: none;
 }
 
 /* Style hero */
