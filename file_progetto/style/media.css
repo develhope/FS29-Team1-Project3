@@ -483,3 +483,8 @@
     padding: 0;
   }
 }
+
+/* Display flex */
+.df {
+  display: flex;
+}

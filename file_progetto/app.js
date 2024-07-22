@@ -1,5 +1,6 @@
 /*------------- DICHIARAZIONI VARIABILI -----------------*/
-
+// html
+const html = document.querySelector("html");
 // Header
 // Navbar 1
 const navSingleButton = document.querySelectorAll(".nav__single__button");
@@ -25,31 +26,32 @@ const asideMqX = document.querySelector(".aside__MQ__X ");
 
 const buttonEconomy = document.querySelectorAll(".button_economy");
 const ulRegione = document.querySelector(".ul_regione");
-const ul_regioni = document.querySelector(".ul_lingua");
+const ulRegioni = document.querySelector(".ul_lingua");
 const arrayLiRegione = ulRegione.children;
 
 /*--------------------- CODICE ---------------------------*/
 
+// Header
 // Kebab menu
 
 buttonMenuKebab.addEventListener("click", () => {
-  asideContainer.classList.add("ul_show");
+  asideContainer.classList.add("df");
 });
 asideButtonX.addEventListener("click", () => {
-  asideContainer.classList.remove("ul_show");
+  asideContainer.classList.remove("df");
 });
 
 //Hamburger menù
 buttonMenùHamburger.addEventListener("click", () => {
-  asideMQ.classList.add("ul_show");
+  asideMQ.classList.add("df");
 });
 asideMqX.addEventListener("click", () => {
-  asideMQ.classList.remove("ul_show");
+  asideMQ.classList.remove("df");
 });
 // Aside menu Media Query
 asideButtonGiochi.addEventListener("click", () => {
   asideInsideButtonGiochi.forEach((element) => {
-    element.classList.toggle("ul_show");
+    element.classList.toggle("df");
     element.addEventListener("click", () => {
       const ul = element.children[1];
 
@@ -58,6 +60,7 @@ asideButtonGiochi.addEventListener("click", () => {
       } else {
         ul.style.display = "none";
       }
+      html.style.overflow = "hidden";
     });
   });
 });
@@ -68,8 +71,10 @@ asideInsideButtonItems.forEach((element) => {
 
     if (ul.style.display === "none") {
       ul.style.display = "flex";
+      html.style.overflow = "hidden";
     } else {
       ul.style.display = "none";
+      html.style.overflow = "scroll";
     }
   });
 });
@@ -78,13 +83,23 @@ asideInsideButtonItems.forEach((element) => {
 for (let i = 0; i < navSingleButton.length; i++) {
   if (i === 0) {
     navSingleButton[i].addEventListener("click", () => {
-      nav1Container[i].classList.add("df");
+      nav1Container[i].classList.toggle("df");
       nav1Container[1].classList.remove("df");
+      if (nav1Container[i].classList.contains("df")) {
+        html.style.overflow = "hidden";
+      } else {
+        html.style.overflow = "scroll";
+      }
     });
   } else if (i === 1) {
     navSingleButton[i].addEventListener("click", () => {
       nav1Container[i].classList.toggle("df");
       nav1Container[0].classList.remove("df");
+      if (nav1Container[i].classList.contains("df")) {
+        html.style.overflow = "hidden";
+      } else {
+        html.style.overflow = "scroll";
+      }
     });
   }
 }
@@ -92,6 +107,7 @@ nav1XButton.forEach((elem) => {
   elem.addEventListener("click", () => {
     nav1Container[0].classList.remove("df");
     nav1Container[1].classList.remove("df");
+    html.style.overflow = "scroll";
   });
 });
 
@@ -128,30 +144,25 @@ tabsBtn.forEach((button) => {
 });
 
 // Footer
-function addCheck() {
-  // for (let i = 0; i < arrayLiRegione.length; i++) {
-  //   if (arrayLiRegione[i].children.innerHTML === "Italy") {
-  //     arrayLiRegione[i].innerHTML += localStorage.getItem("check-dropbox");
-  //   }
-  // }
-  ulRegione.classList.toggle("ul_show");
-  ul_regioni.classList.remove("ul_show");
-  ulRegione.focus();
-}
-buttonEconomy[0].addEventListener("click", addCheck());
+
+buttonEconomy[0].addEventListener("click", () => {
+  console.log(ulRegione);
+  if (ulRegione.style.display === "none") {
+    ulRegione.style.display = "flex";
+  } else {
+    ulRegione.style.display = "none";
+  }
+});
 buttonEconomy[1].addEventListener("click", () => {
-  ul_regioni.classList.toggle("ul_show");
-  ulRegione.classList.remove("ul_show");
+  console.log(ulRegione);
+  if (ulRegione.style.display === "none") {
+    ulRegione.style.display = "flex";
+  } else {
+    ulRegione.style.display = "none";
+  }
 });
 
 // Chiudere al click fuori da UlRegione
-ulRegione.addEventListener("blur", () => {
-  ulRegione.blur();
-  ulRegione.classList.remove("ul_show");
-});
-buttonEconomy[1].addEventListener("blur", () => {
-  ul_regioni.classList.remove("ul_show");
-});
 
 // Icona Spunta
 localStorage.setItem(
