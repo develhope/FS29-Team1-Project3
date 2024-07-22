@@ -33,7 +33,15 @@ const ulRegioni = document.querySelector(".ul_lingua");
 const arrayLiRegione = ulRegione.children;
 
 /*--------------------- CODICE ---------------------------*/
+// Chiusura al di fuori del div scelto
+overlay.addEventListener("click", () => {
+  overlay.style.display = "none";
+  asideContainer.classList.remove("df");
+  nav1Container[0].classList.remove("df");
+  nav1Container[1].classList.remove("df");
 
+  html.style.overflow = "scroll";
+});
 // Header
 // Nav2 sticky
 
@@ -55,23 +63,24 @@ const sticky = nav2[0].offsetTop;
 // Kebab menu
 buttonMenuKebab.addEventListener("click", () => {
   asideContainer.classList.add("df");
-  html.style.overflow = "hidden";
-  // overlay.style.display = "block";
+  // html.style.marginLeft = "25vw";
+  asideContainer.style.width = "25vw";
+  asideContainer.style.overflow = "scroll";
+  overlay.style.display = "block";
 });
 asideButtonX.addEventListener("click", () => {
   asideContainer.classList.remove("df");
-  html.style.overflow = "scroll";
-  // overlay.style.display = "none";
+  overlay.style.display = "none";
 });
 
 //Hamburger menù
 buttonMenùHamburger.addEventListener("click", () => {
   asideMQ.classList.add("df");
   html.style.overflow = "hidden";
+  overlay.style.display = "block";
 });
 asideMqX.addEventListener("click", () => {
   asideMQ.classList.remove("df");
-  html.style.overflow = "scroll";
 });
 
 // Aside menu Media Query
@@ -83,6 +92,7 @@ asideButtonGiochi.addEventListener("click", () => {
 
       if (ul.style.display === "none") {
         ul.style.display = "flex";
+        overlay.style.display = "block";
       } else {
         ul.style.display = "none";
       }
@@ -96,10 +106,11 @@ asideInsideButtonItems.forEach((element) => {
 
     if (ul.style.display === "none") {
       ul.style.display = "flex";
+      overlay.style.display = "block";
+
       // html.style.overflow = "hidden";
     } else {
       ul.style.display = "none";
-      // html.style.overflow = "scroll";
     }
   });
 });
@@ -110,20 +121,20 @@ for (let i = 0; i < navSingleButton.length; i++) {
     navSingleButton[i].addEventListener("click", () => {
       nav1Container[i].classList.toggle("df");
       nav1Container[1].classList.remove("df");
+      overlay.style.display = "block";
+
       if (nav1Container[i].classList.contains("df")) {
         html.style.overflow = "hidden";
-      } else {
-        html.style.overflow = "scroll";
       }
     });
   } else if (i === 1) {
     navSingleButton[i].addEventListener("click", () => {
       nav1Container[i].classList.toggle("df");
       nav1Container[0].classList.remove("df");
+      overlay.style.display = "block";
+
       if (nav1Container[i].classList.contains("df")) {
         html.style.overflow = "hidden";
-      } else {
-        html.style.overflow = "scroll";
       }
     });
   }
@@ -133,6 +144,7 @@ nav1XButton.forEach((elem) => {
     nav1Container[0].classList.remove("df");
     nav1Container[1].classList.remove("df");
     html.style.overflow = "scroll";
+    overlay.style.display = "none";
   });
 });
 
