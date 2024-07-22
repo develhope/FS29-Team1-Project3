@@ -8,8 +8,18 @@
   position: absolute;
   z-index: 9;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background: #000;
+  opacity: 0.5;
+}
+.overlay_bottom {
+  display: none;
+  position: absolute;
+  bottom: -100;
+  z-index: 9;
+  width: 100%;
+  height: 100%;
+  background: transparent;
   opacity: 0.5;
 }
 
@@ -17,7 +27,7 @@
 .nav1 {
   height: 2.3rem;
   position: relative;
-  z-index: 999;
+  z-index: 11;
   transition: top 0.3s, opacity 0.3s;
   background-color: black;
 }
@@ -990,6 +1000,8 @@
   text-align: left;
   text-wrap: nowrap;
   background-color: transparent;
+  position: absolute;
+  z-index: 10;
 }
 .inside_economy {
   margin-top: 1rem;
@@ -1024,7 +1036,7 @@
   justify-content: center;
   gap: 1rem;
   position: absolute;
-  bottom: 3.5rem;
+  bottom: -1rem;
   right: -1rem;
   z-index: 10;
   box-shadow: 1px 1px 5px rgb(59, 58, 58);
@@ -1060,7 +1072,7 @@
   justify-content: center;
   gap: 1rem;
   position: absolute;
-  bottom: 3.5rem;
+  bottom: -1rem;
   right: -1rem;
   z-index: 10;
   box-shadow: 1px 1px 5px rgb(59, 58, 58);

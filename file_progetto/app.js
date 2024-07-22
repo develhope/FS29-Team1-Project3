@@ -1,6 +1,9 @@
 /*------------- DICHIARAZIONI VARIABILI -----------------*/
 // html
 const html = document.querySelector("html");
+// Overlay
+const overlay = document.querySelector(".overlay");
+const overlayBottom = document.querySelector(".overlay_bottom");
 // Header
 // Navbar 1
 const navSingleButton = document.querySelectorAll(".nav__single__button");
@@ -8,11 +11,10 @@ const nav1Container = document.querySelectorAll(".nav1__container");
 const nav1XButton = document.querySelectorAll(".nav1__x__button");
 
 // Aside
-const overlay = document.querySelector(".overlay");
 const buttonMenuKebab = document.querySelector(".button__menù-kebab");
 const asideContainer = document.querySelector(".aside__container");
 const asideButtonX = document.querySelector(".aside__button-x");
-
+const asideContent = document.querySelector(".aside__content");
 // Aside menu Media Query
 const buttonMenùHamburger = document.querySelector(".button__menù-hamburger");
 const asideMQ = document.querySelector(".aside__MQ");
@@ -39,9 +41,17 @@ overlay.addEventListener("click", () => {
   asideContainer.classList.remove("df");
   nav1Container[0].classList.remove("df");
   nav1Container[1].classList.remove("df");
+  ulRegione.style.display = "none";
+  ulRegioni.style.display = "none";
 
   html.style.overflow = "scroll";
 });
+overlayBottom.addEventListener("click", () => {
+  overlayBottom.style.display = "none";
+  ulRegione.style.display = "none";
+  ulRegioni.style.display = "none";
+});
+
 // Header
 // Nav2 sticky
 
@@ -63,14 +73,15 @@ const sticky = nav2[0].offsetTop;
 // Kebab menu
 buttonMenuKebab.addEventListener("click", () => {
   asideContainer.classList.add("df");
-  // html.style.marginLeft = "25vw";
+  html.style.overflow = "hidden";
   asideContainer.style.width = "25vw";
-  asideContainer.style.overflow = "scroll";
+  asideContent.style.overflow = "scroll";
   overlay.style.display = "block";
 });
 asideButtonX.addEventListener("click", () => {
   asideContainer.classList.remove("df");
   overlay.style.display = "none";
+  html.style.overflow = "scroll";
 });
 
 //Hamburger menù
@@ -81,6 +92,8 @@ buttonMenùHamburger.addEventListener("click", () => {
 });
 asideMqX.addEventListener("click", () => {
   asideMQ.classList.remove("df");
+  html.style.overflow = "scroll";
+  overlay.style.display = "none";
 });
 
 // Aside menu Media Query
@@ -95,6 +108,7 @@ asideButtonGiochi.addEventListener("click", () => {
         overlay.style.display = "block";
       } else {
         ul.style.display = "none";
+        html.style.overflow = "scroll";
       }
     });
   });
@@ -108,9 +122,10 @@ asideInsideButtonItems.forEach((element) => {
       ul.style.display = "flex";
       overlay.style.display = "block";
 
-      // html.style.overflow = "hidden";
+      html.style.overflow = "hidden";
     } else {
       ul.style.display = "none";
+      html.style.overflow = "scroll";
     }
   });
 });
@@ -185,17 +200,21 @@ tabsBtn.forEach((button) => {
 buttonEconomy[0].addEventListener("click", () => {
   if (ulRegione.style.display === "none") {
     ulRegione.style.display = "flex";
+    overlayBottom.style.display = "block";
     ulRegioni.style.display = "none";
   } else {
     ulRegione.style.display = "none";
+    overlayBottom.style.display = "none";
   }
 });
 buttonEconomy[1].addEventListener("click", () => {
   if (ulRegioni.style.display === "none") {
     ulRegioni.style.display = "flex";
+    overlayBottom.style.display = "block";
     ulRegione.style.display = "none";
   } else {
     ulRegioni.style.display = "none";
+    overlayBottom.style.display = "none";
   }
 });
 
@@ -211,7 +230,3 @@ for (let i = 0; i < arrayLiRegione.length; i++) {
     arrayLiRegione[i].innerHTML += localStorage.getItem("check-dropbox");
   });
 }
-/*
-overlay 100vh
-scroll su aside
-*/
