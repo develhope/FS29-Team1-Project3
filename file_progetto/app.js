@@ -89,11 +89,13 @@ buttonMenùHamburger.addEventListener("click", () => {
   asideMQ.classList.add("df");
   html.style.overflow = "hidden";
   overlay.style.display = "block";
+  overlay.setAttribute("backgruond-color", "black");
 });
 asideMqX.addEventListener("click", () => {
   asideMQ.classList.remove("df");
   html.style.overflow = "scroll";
   overlay.style.display = "none";
+  overlay.setAttribute("backgruond-color", "black");
 });
 
 // Aside menu Media Query
@@ -105,10 +107,8 @@ asideButtonGiochi.addEventListener("click", () => {
 
       if (ul.style.display === "none") {
         ul.style.display = "flex";
-        overlay.style.display = "block";
       } else {
         ul.style.display = "none";
-        html.style.overflow = "scroll";
       }
     });
   });
@@ -120,8 +120,6 @@ asideInsideButtonItems.forEach((element) => {
 
     if (ul.style.display === "none") {
       ul.style.display = "flex";
-      overlay.style.display = "block";
-
       html.style.overflow = "hidden";
     } else {
       ul.style.display = "none";
