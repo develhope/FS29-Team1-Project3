@@ -171,6 +171,9 @@ a {
 .pt-4 {
   padding-top: 2.5rem;
 }
+.pt-5{
+  padding-top: 3rem;
+}
 /* Bottom */
 .pb-1 {
   padding-bottom: 1rem;
