@@ -116,6 +116,18 @@ tabsBtn.forEach((button) => {
   });
 });
 
+/*--- Arrow tabs ---*/
+const arrowLeft = document.querySelector(".tabs__arrow__left");
+const arrowRight = document.querySelector(".tabs__arrow__right");
+const container = document.querySelector(".tabs__container");
+
+arrowLeft.addEventListener("click", () => {
+  container.scrollLeft -= 250;
+});
+arrowRight.addEventListener("click", () => {
+  container.scrollLeft += 250;
+});
+
 // Footer
 function addCheck() {
   // for (let i = 0; i < arrayLiRegione.length; i++) {
