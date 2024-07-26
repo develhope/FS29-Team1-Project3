@@ -955,6 +955,7 @@
   position: relative;
 }
 .button_economy {
+  
   border: 1px solid rgb(177, 175, 175);
   padding: 0.5rem 1rem 0;
   width: 90%;
@@ -1096,8 +1097,14 @@
 
 /* Hover seconda sezione */
 .button_economy:hover {
-  width: 92%;
+  
+  top: 0;
+  left: 0;
   height: 5rem;
+  width: 90%;
+  border-radius: 2px;
+  z-index: 0;
+  transition: all 0.2s;
 }
 .ul_regione li:hover a {
   padding-left: 0.5rem;
