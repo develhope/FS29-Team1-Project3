@@ -13,10 +13,11 @@
   /*nav1 */
 
   /* nav2*/
-  .navcircle {
-    border-radius: 18%;
-    width: 1.5rem;
-    height: 0.15rem;
+  .button__menù-hamburger {
+    display: flex;
+  }
+  .button__menù-kebab {
+    display: none;
   }
   .nav2__box {
     display: none;
@@ -124,15 +125,6 @@
 
   /* nav2*/
 
-  .button__menù-hamburger {
-    display: flex;
-  }
-  .button__menù-kebab {
-    display: none;
-  }
-  .nav2__box {
-    display: none;
-  }
   /*---- Main ----*/
   /* hero top */
   .hero {
@@ -223,8 +215,8 @@
     width: 100%;
   }
   .simbol img {
-    width: 90%;
-    height: 90%;
+    width: 7%;
+    height: 7%;
   }
 
   .selection_group {
@@ -246,13 +238,32 @@
     height: 40%;
     margin: 0 auto;
   }
-  .button_economy {
-    width: 95%;
-    height: 70%;
-  }
+
   .prezzi {
     justify-content: left;
     margin: 0 auto;
+  }
+  .ul_regione {
+    width: 81.8%;
+    height: 30rem;
+    overflow-y: scroll;
+    right: 1.6rem;
+  }
+  .ul_regione li {
+    width: 90%;
+    height: unset;
+    border: none;
+  }
+  .ul_lingua {
+    width: 81.8%;
+    height: 30rem;
+    overflow-y: scroll;
+    right: 1.6rem;
+  }
+  .ul_lingua li {
+    width: 90%;
+    height: unset;
+    border: none;
   }
   .accordi_trust {
     align-items: center;
@@ -260,6 +271,7 @@
   }
   .accordi {
     width: 100%;
+    margin-top: 7rem;
   }
   .ul_accordi {
     width: 100%;
@@ -341,7 +353,7 @@
   /* Hero bottom */
   .hero__bottom {
     flex-wrap: wrap;
-    background: url(../assets/images/media/hero__bottom_tablet.jpg);
+    background: url("./assets/images/media/hero__bottom_tablet.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     height: 40rem;
@@ -403,6 +415,20 @@
     width: 100%;
     flex-wrap: wrap;
     gap: 0.5rem;
+  }
+  .button_economy {
+    width: 90%;
+    position: relative;
+  }
+  .ul_regione {
+    width: 100%;
+    bottom: 4rem;
+    right: -1rem;
+  }
+  .ul_lingua {
+    width: 100%;
+    bottom: 4rem;
+    right: -1rem;
   }
   .trust {
     margin: 0;
@@ -490,4 +516,9 @@
     margin: 0;
     padding: 0;
   }
+}
+
+/* Display flex */
+.df {
+  display: flex;
 }

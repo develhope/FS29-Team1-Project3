@@ -171,6 +171,9 @@ a {
 .pt-4 {
   padding-top: 2.5rem;
 }
+.pt-5{
+  padding-top: 3rem;
+}
 /* Bottom */
 .pb-1 {
   padding-bottom: 1rem;
@@ -184,12 +187,6 @@ a {
 .pb-4 {
   padding-bottom: 2.5rem;
 }
-
-/* Display flex */
-.df {
-  display: flex;
-}
-
 
 @media (max-width: 426px) {
   .general__button {

@@ -1,14 +1,37 @@
 /* Blocchi univoci */
 
 /* Navbar */
+
+/* Overlay */
+.overlay {
+  display: none;
+  position: absolute;
+  z-index: 9;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+}
+.overlay_bottom {
+  display: none;
+  position: absolute;
+  bottom: -100;
+  z-index: 9;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  opacity: 0.5;
+}
+
 /* Prima Nav */
 .nav1 {
   height: 2.3rem;
-  overflow: hidden;
+  position: relative;
+  z-index: 11;
+  transition: top 0.3s, opacity 0.3s;
   background-color: black;
 }
 .nav__buttons {
-  margin-top: 0.5rem;
+  margin-bottom: 0;
   margin-right: 2rem;
   display: flex;
   align-items: center;
@@ -17,6 +40,7 @@
   /* position: relative; */
 }
 .nav__single__button {
+  margin-top: 0.5rem;
   border: none;
   width: 2rem;
   height: 1.5rem;
@@ -33,13 +57,12 @@
 /* Menù a tendina Account */
 .nav1__container {
   width: 100%;
-  /* height: 40vh; */
   display: none;
   flex-flow: column;
   background-color: black;
   position: absolute;
   right: 0rem;
-  z-index: 1001;
+  z-index: 11;
 }
 .nav1__x__container {
   height: 20%;
@@ -160,6 +183,9 @@
   display: flex;
   align-items: center;
   gap: 1rem;
+  position: relative;
+  transition: top 0.3s;
+  background-color: white;
 }
 
 /* Aside */
@@ -177,6 +203,7 @@
   gap: 0.2rem;
   cursor: pointer;
   background: none;
+  transition: margin-left 0.5s;
 }
 .navcircle {
   border-radius: 50%;
@@ -204,15 +231,15 @@
 
 .aside__container {
   padding: 1rem;
-  width: 25vw;
-  /* height: 90%; */
+  width: 0;
   display: none;
   flex-flow: column;
-  position: absolute;
-  top: -1rem;
-  right: -27rem;
-  z-index: 1000;
+  position: fixed;
+  top: 2.3rem;
+  left: 0rem;
+  z-index: 10;
   background-color: #fff;
+  transition: 0.5s;
 }
 .aside__text {
   margin: 1rem;
@@ -293,8 +320,8 @@
   flex-direction: column;
   /* border: 1px solid black; */
   position: absolute;
+  top: /*4.3vh*/ 2.2rem;
   left: 0;
-  top: 4.3vh;
   z-index: 1010;
   background-color: white;
 }
@@ -337,6 +364,7 @@
   text-align: left;
 }
 .aside__inside-button-giochi div {
+  width: 100%;
   display: flex;
   justify-content: space-between;
 }
@@ -347,7 +375,6 @@
   gap: 0.7rem;
 }
 .aside__inside-button-items {
-  display: flex;
   justify-content: space-between;
   flex-direction: column;
   text-align: left;
@@ -356,10 +383,7 @@
   display: flex;
   justify-content: space-between;
 }
-.aside__inside-button-items > div {
-  /* border-bottom: 1px solid black; */
-  /* padding: 1rem 0; */
-}
+
 .aside__inside-button-items ul {
   display: none;
   flex-direction: column;
@@ -402,7 +426,7 @@
 .nav2__list-menù__giochi {
   /* display: flex; */
   opacity: 0.9;
-  margin-top: 1rem;
+  margin-top: 3rem;
   gap: 2rem;
   background-color: white;
   border-radius: 0.2rem;
@@ -489,6 +513,20 @@
 .aside__inside-button-giochi ul li:hover,
 .aside__inside-button-items ul li:hover {
   color: red;
+}
+/* nav Sticky */
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.hidden {
+  opacity: 0;
+  pointer-events: none;
+  display: none;
 }
 
 /* Style hero */
@@ -760,11 +798,14 @@
   text-align: left;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.244);
   background-color: #f1f1f1;
+  height: 100%;
 }
 
 .tabs__cards img {
   width: 100%;
   height: 300px;
+  object-fit: cover;
+  object-position: center top;
 }
 
 .tabs__cards:hover {
@@ -962,6 +1003,8 @@
   text-align: left;
   text-wrap: nowrap;
   background-color: transparent;
+  position: absolute;
+  z-index: 10;
 }
 .inside_economy {
   margin-top: 1rem;
@@ -996,9 +1039,9 @@
   justify-content: center;
   gap: 1rem;
   position: absolute;
-  bottom: 3.5rem;
+  bottom: -1rem;
   right: -1rem;
-  z-index: 99;
+  z-index: 10;
   box-shadow: 1px 1px 5px rgb(59, 58, 58);
   background-color: rgb(255, 255, 255);
 }
@@ -1032,9 +1075,9 @@
   justify-content: center;
   gap: 1rem;
   position: absolute;
-  bottom: 3.5rem;
+  bottom: -1rem;
   right: -1rem;
-  z-index: 99;
+  z-index: 10;
   box-shadow: 1px 1px 5px rgb(59, 58, 58);
   background-color: rgb(255, 255, 255);
 }
@@ -1113,9 +1156,4 @@
 .ul_lingua li:hover a {
   padding-left: 0.5rem;
   cursor: pointer;
-}
-
-/* Classi per JS DOM */
-.ul_show {
-  display: flex;
 }

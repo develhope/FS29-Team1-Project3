@@ -1,12 +1,20 @@
+/*------------- DICHIARAZIONI VARIABILI -----------------*/
+// html
+const html = document.querySelector("html");
+// Overlay
+const overlay = document.querySelector(".overlay");
+const overlayBottom = document.querySelector(".overlay_bottom");
 // Header
 // Navbar 1
 const navSingleButton = document.querySelectorAll(".nav__single__button");
 const nav1Container = document.querySelectorAll(".nav1__container");
 const nav1XButton = document.querySelectorAll(".nav1__x__button");
+
 // Aside
 const buttonMenuKebab = document.querySelector(".button__menù-kebab");
 const asideContainer = document.querySelector(".aside__container");
 const asideButtonX = document.querySelector(".aside__button-x");
+const asideContent = document.querySelector(".aside__content");
 // Aside menu Media Query
 const buttonMenùHamburger = document.querySelector(".button__menù-hamburger");
 const asideMQ = document.querySelector(".aside__MQ");
@@ -18,24 +26,82 @@ const asideInsideButtonItems = document.querySelectorAll(
 );
 const asideButtonGiochi = document.querySelector(".aside__button-giochi");
 const asideMqX = document.querySelector(".aside__MQ__X ");
+
+// Footer
+
+const buttonEconomy = document.querySelectorAll(".button_economy");
+const ulRegione = document.querySelector(".ul_regione");
+const ulRegioni = document.querySelector(".ul_lingua");
+const arrayLiRegione = ulRegione.children;
+
+/*--------------------- CODICE ---------------------------*/
+// Chiusura al di fuori del div scelto
+overlay.addEventListener("click", () => {
+  overlay.style.display = "none";
+  asideContainer.classList.remove("df");
+  nav1Container[0].classList.remove("df");
+  nav1Container[1].classList.remove("df");
+  ulRegione.style.display = "none";
+  ulRegioni.style.display = "none";
+
+  html.style.overflow = "scroll";
+});
+overlayBottom.addEventListener("click", () => {
+  overlayBottom.style.display = "none";
+  ulRegione.style.display = "none";
+  ulRegioni.style.display = "none";
+});
+
+// Header
+// Nav2 sticky
+
+window.onscroll = function () {
+  if (window.pageYOffset >= sticky) {
+    nav2[0].classList.add("sticky");
+    nav1[0].classList.add("hidden");
+  } else {
+    nav2[0].classList.remove("sticky");
+    nav1[0].classList.remove("hidden");
+  }
+};
+
+// Dichiarazione variabili per Navbar 2 sticky
+const nav1 = document.getElementsByClassName("nav1");
+const nav2 = document.getElementsByClassName("nav2");
+const sticky = nav2[0].offsetTop;
+
 // Kebab menu
 buttonMenuKebab.addEventListener("click", () => {
-  asideContainer.classList.add("ul_show");
+  asideContainer.classList.add("df");
+  html.style.overflow = "hidden";
+  asideContainer.style.width = "25vw";
+  asideContent.style.overflow = "scroll";
+  overlay.style.display = "block";
 });
 asideButtonX.addEventListener("click", () => {
-  asideContainer.classList.remove("ul_show");
+  asideContainer.classList.remove("df");
+  overlay.style.display = "none";
+  html.style.overflow = "scroll";
 });
+
 //Hamburger menù
 buttonMenùHamburger.addEventListener("click", () => {
-  asideMQ.classList.add("ul_show");
+  asideMQ.classList.add("df");
+  html.style.overflow = "hidden";
+  overlay.style.display = "block";
+  overlay.setAttribute("backgruond-color", "black");
 });
 asideMqX.addEventListener("click", () => {
-  asideMQ.classList.remove("ul_show");
+  asideMQ.classList.remove("df");
+  html.style.overflow = "scroll";
+  overlay.style.display = "none";
+  overlay.setAttribute("backgruond-color", "black");
 });
+
 // Aside menu Media Query
 asideButtonGiochi.addEventListener("click", () => {
   asideInsideButtonGiochi.forEach((element) => {
-    element.classList.toggle("ul_show");
+    element.classList.toggle("df");
     element.addEventListener("click", () => {
       const ul = element.children[1];
 
@@ -54,8 +120,10 @@ asideInsideButtonItems.forEach((element) => {
 
     if (ul.style.display === "none") {
       ul.style.display = "flex";
+      html.style.overflow = "hidden";
     } else {
       ul.style.display = "none";
+      html.style.overflow = "scroll";
     }
   });
 });
@@ -64,59 +132,34 @@ asideInsideButtonItems.forEach((element) => {
 for (let i = 0; i < navSingleButton.length; i++) {
   if (i === 0) {
     navSingleButton[i].addEventListener("click", () => {
-      nav1Container[i].classList.toggle("ul_show");
-      nav1Container[1].classList.remove("ul_show");
+      nav1Container[i].classList.toggle("df");
+      nav1Container[1].classList.remove("df");
+      overlay.style.display = "block";
+
+      if (nav1Container[i].classList.contains("df")) {
+        html.style.overflow = "hidden";
+      }
     });
   } else if (i === 1) {
     navSingleButton[i].addEventListener("click", () => {
-      nav1Container[i].classList.toggle("ul_show");
-      nav1Container[0].classList.remove("ul_show");
+      nav1Container[i].classList.toggle("df");
+      nav1Container[0].classList.remove("df");
+      overlay.style.display = "block";
+
+      if (nav1Container[i].classList.contains("df")) {
+        html.style.overflow = "hidden";
+      }
     });
   }
 }
 nav1XButton.forEach((elem) => {
   elem.addEventListener("click", () => {
-    nav1Container[0].classList.remove("ul_show");
-    nav1Container[1].classList.remove("ul_show");
+    nav1Container[0].classList.remove("df");
+    nav1Container[1].classList.remove("df");
+    html.style.overflow = "scroll";
+    overlay.style.display = "none";
   });
 });
-
-// Footer
-function addCheck() {
-  // for (let i = 0; i < arrayLiRegione.length; i++) {
-  //   if (arrayLiRegione[i].children.innerHTML === "Italy") {
-  //     arrayLiRegione[i].innerHTML += localStorage.getItem("check-dropbox");
-  //   }
-  // }
-  ulRegione.classList.toggle("ul_show");
-  ul_regioni.classList.remove("ul_show");
-  ulRegione.focus();
-}
-buttonEconomy[0].addEventListener("click", addCheck());
-buttonEconomy[1].addEventListener("click", () => {
-  ul_regioni.classList.toggle("ul_show");
-  ulRegione.classList.remove("ul_show");
-});
-
-// Chiudere al click fuori da UlRegione
-ulRegione.addEventListener("blur", () => {
-  ulRegione.blur();
-  ulRegione.classList.remove("ul_show");
-});
-buttonEconomy[1].addEventListener("blur", () => {
-  ul_regioni.classList.remove("ul_show");
-});
-
-// Icona Spunta
-localStorage.setItem(
-  "check-dropbox",
-  '<img src="./assets/icons/footer/Icona conferma ul.svg" alt="" class="check">'
-);
-for (let i = 0; i < arrayLiRegione.length; i++) {
-  arrayLiRegione[i].addEventListener("click", () => {
-    arrayLiRegione[i].innerHTML += localStorage.getItem("check-dropbox");
-  });
-}
 
 /*  -----------------------------------------------------------------------------------------------
   Main
@@ -149,3 +192,39 @@ tabsBtn.forEach((button) => {
     });
   });
 });
+
+// Footer
+
+buttonEconomy[0].addEventListener("click", () => {
+  if (ulRegione.style.display === "none") {
+    ulRegione.style.display = "flex";
+    overlayBottom.style.display = "block";
+    ulRegioni.style.display = "none";
+  } else {
+    ulRegione.style.display = "none";
+    overlayBottom.style.display = "none";
+  }
+});
+buttonEconomy[1].addEventListener("click", () => {
+  if (ulRegioni.style.display === "none") {
+    ulRegioni.style.display = "flex";
+    overlayBottom.style.display = "block";
+    ulRegione.style.display = "none";
+  } else {
+    ulRegioni.style.display = "none";
+    overlayBottom.style.display = "none";
+  }
+});
+
+// Chiudere al click fuori da UlRegione
+
+// Icona Spunta
+localStorage.setItem(
+  "check-dropbox",
+  '<img src="./assets/icons/footer/Icona conferma ul.svg" alt="" class="check">'
+);
+for (let i = 0; i < arrayLiRegione.length; i++) {
+  arrayLiRegione[i].addEventListener("click", () => {
+    arrayLiRegione[i].innerHTML += localStorage.getItem("check-dropbox");
+  });
+}
