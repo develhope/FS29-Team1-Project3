@@ -28,11 +28,12 @@ const asideButtonGiochi = document.querySelector(".aside__button-giochi");
 const asideMqX = document.querySelector(".aside__MQ__X ");
 
 // Footer
-
+const linguaSelezionata = document.querySelectorAll('.lingua_selezionata');
 const buttonEconomy = document.querySelectorAll(".button_economy");
 const ulRegione = document.querySelector(".ul_regione");
 const ulRegioni = document.querySelector(".ul_lingua");
 const arrayLiRegione = ulRegione.children;
+const arrayLiLingua = ulRegioni.children;
 
 /*--------------------- CODICE ---------------------------*/
 // Chiusura al di fuori del div scelto
@@ -193,6 +194,18 @@ tabsBtn.forEach((button) => {
   });
 });
 
+/*--- Arrow tabs ---*/
+const arrowLeft = document.querySelector(".tabs__arrow__left");
+const arrowRight = document.querySelector(".tabs__arrow__right");
+const container = document.querySelector(".tabs__container");
+
+arrowLeft.addEventListener("click", () => {
+  container.scrollLeft -= 250;
+});
+arrowRight.addEventListener("click", () => {
+  container.scrollLeft += 250;
+});
+
 // Footer
 
 buttonEconomy[0].addEventListener("click", () => {
@@ -225,6 +238,34 @@ localStorage.setItem(
 );
 for (let i = 0; i < arrayLiRegione.length; i++) {
   arrayLiRegione[i].addEventListener("click", () => {
-    arrayLiRegione[i].innerHTML += localStorage.getItem("check-dropbox");
-  });
+    for (let j = 0; j < arrayLiRegione.length; j ++) {
+      const checkIcon = arrayLiRegione[j].querySelector(".check");
+     
+      if (checkIcon) {
+        
+        checkIcon.remove();
+      }
+
+    }
+   linguaSelezionata[0].innerText = arrayLiRegione[i].children[0].textContent;
+   
+   arrayLiRegione[i].innerHTML += localStorage.getItem("check-dropbox")
+  })
+}
+
+for (let i = 0; i < arrayLiLingua.length; i++) {
+  arrayLiLingua[i].addEventListener("click", () => {
+    for (let j = 0; j < arrayLiLingua.length; j ++) {
+      const checkIcon = arrayLiLingua[j].querySelector(".check");
+      
+      if (checkIcon) {
+        
+        checkIcon.remove();
+      }
+      
+    }
+    linguaSelezionata[1].innerText = arrayLiLingua[i].children[0].textContent;
+   
+    arrayLiLingua[i].innerHTML += localStorage.getItem("check-dropbox")
+  })
 }

@@ -335,6 +335,30 @@
     width: 90%;
   }
   /* Ultime Novità */
+  .tabs__container{
+    overflow: auto;
+    -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+  }
+  .tabs__container::-webkit-scrollbar {
+    display: none; /* for chrome */
+  }
+  .tabs__links{
+    width: 200%;
+    padding-left: 2rem;
+  }
+  .tabs__arrow__left{
+    position: absolute;
+    display: inline;
+    z-index: 50;
+    left: 1rem;
+  }
+  .tabs__arrow__right{
+    position: absolute;  
+    display: inline;
+    right: 1rem;
+    z-index: 50;
+  }
   .tabs__cards {
     width: 90%;
     font-size: 0.7rem;
