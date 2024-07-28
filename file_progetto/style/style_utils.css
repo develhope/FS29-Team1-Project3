@@ -1018,14 +1018,27 @@
   position: relative;
 }
 .button_economy {
-  border: 1px solid rgb(177, 175, 175);
-  padding: 0.5rem 1rem 0;
+  position: relative;
+  padding: 0.5rem 0.5rem 0;
   width: 90%;
   text-align: left;
-  text-wrap: nowrap;
   background-color: transparent;
+  z-index: 1;
+  border: none;
+  white-space: nowrap;
+}
+.button_economy::after {
+  border: 1px solid rgb(177, 175, 175);
   position: absolute;
-  z-index: 10;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  content: "";
+  transition: all 0.2s;
+}
+.button_economy:hover::after {
+  scale: 1.07;
 }
 .inside_economy {
   margin-top: 1rem;
@@ -1160,10 +1173,16 @@
 }
 
 /* Hover seconda sezione */
-.button_economy:hover {
-  width: 92%;
+/* .button_economy:hover {
+  
+  top: 0;
+  left: 0;
   height: 5rem;
-}
+  width: 90%;
+  border-radius: 2px;
+  z-index: 0;
+  transition: all 0.2s;
+} */
 .ul_regione li:hover a {
   padding-left: 0.5rem;
   cursor: pointer;
