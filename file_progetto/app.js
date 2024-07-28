@@ -75,7 +75,7 @@ buttonMenuKebab.addEventListener("click", () => {
   asideContainer.classList.add("df");
   html.style.overflow = "hidden";
   asideContainer.style.width = "25vw";
-  asideContent.style.overflow = "scroll";
+
   overlay.style.display = "block";
 });
 asideButtonX.addEventListener("click", () => {
